@@ -1,0 +1,105 @@
+.report {
+    display: flex;
+    height: 100%;
+    min-height: 35.8rem;
+    padding: 3rem;
+    border-radius: 1rem;
+    border-style: solid;
+    border-width: 0.1rem;
+    border-color: var(--color-grey-border);
+    transition: var(--transition);
+}
+
+.report__body {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.report__head {
+    display: flex;
+    align-items: center;
+    margin-bottom: var(--gap);
+}
+
+.report__btn {
+    margin-right: 1rem;
+    padding: 0.5rem;
+    background-color: var(--color-orange-10);
+    border-radius: 0.5rem;
+    transition: var(--transition);
+}
+
+.report__icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 2.5rem;
+    height: 2.5rem;
+}
+
+.report__icon .icon {
+    max-width: 100%;
+    max-height: 100%;
+    fill: var(--color-orange-100);
+    transition: var(--transition);
+}
+
+.report__slogan {
+    color: var(--color-orange-100);
+    font: var(--font-type-19);
+    font-weight: 400;
+    opacity: 0;
+    transition: var(--transition);
+}
+
+.report__info {
+    display: flex;
+    flex-direction: column;
+}
+
+.report__name {
+    margin-bottom: 1rem;
+    color: var(--color-black-100);
+    font: var(--font-type-23);
+    font-weight: 500;
+}
+
+.report__desc {
+    margin-bottom: var(--gap);
+}
+
+.report__desc-dark {
+    color: var(--color-black-100);
+}
+
+.report__buttons {
+    display: flex;
+    column-gap: var(--gap);
+    margin-top: auto;
+}
+
+.report__link.button-secondary {
+    color: var(--color-black-100);
+    border-color: var(--color-grey-border);
+    background-color: var(--color-white);
+}
+
+@media (any-hover: hover) {
+    .report:hover {
+        border-color: var(--color-beige-100);
+        background-color: var(--color-orange-5);
+    }
+
+    .report:hover .report__btn {
+        background-color: var(--color-orange-100);
+    }
+
+    .report:hover .report__icon .icon {
+        fill: var(--color-white);
+    }
+
+    .report:hover .report__slogan {
+        opacity: 1;
+    }
+}

@@ -1,0 +1,9 @@
+.controls__list {
+    display: flex;
+    align-items: center;
+    column-gap: 2rem;
+}
+
+.controls__link.link {
+    color: var(--color-black-100);
+}

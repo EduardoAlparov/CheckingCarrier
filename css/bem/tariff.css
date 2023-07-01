@@ -1,0 +1,143 @@
+.tariff {
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    min-height: 49.4rem;
+    padding: 3rem;
+    border-radius: 2rem;
+    border-style: solid;
+    border-width: 0.1rem;
+    border-color: var(--color-black-20);
+}
+
+.tariff--profitably {
+    border-width: 0.4rem;
+    border-color: var(--color-orange-80);
+}
+
+.tariff__body {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.tariff__icon {
+    display: flex;
+    margin-bottom: 1rem;
+}
+
+.tariff__icon .icon {
+    flex-basis: 4rem;
+    max-height: 5rem;
+    max-width: max-content;
+    fill: var(--color-black-100);
+}
+
+.tariff__icon .icon-tariff-two {
+    flex-basis: 7rem;
+}
+
+.tariff__icon .icon-tariff-three {
+    flex-basis: 5rem;
+}
+
+.tariff--profitably .tariff__icon .icon {
+    fill: var(--color-orange-80)
+}
+
+.tariff__title {
+    margin-bottom: 1rem;
+}
+
+.tariff__text {
+    display: none;
+}
+
+.tariff__list {
+    margin-bottom: 3rem;
+}
+
+.tariff__item {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 0;
+    border-style: solid;
+    border-width: 0 0 0.1rem 0;
+    border-color: var(--color-grey-border);
+}
+
+.tariff__key {
+    margin-bottom: 0.5rem;
+    color: var(--color-black-40);
+}
+
+.tariff__value {
+    color: var(--color-black-100);
+}
+
+.tariff__price {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 3rem;
+}
+
+.tariff__price-value {
+    font: var(--font-type-23);
+    color: var(--color-black-100);
+}
+
+.tariff__price-text {
+    color: var(--color-black-100);
+}
+
+.tariff__link.button-primary {
+    display: block;
+    margin-top: auto;
+    color: var(--color-grey-6);
+    text-align: center;
+    background-color: var(--color-black-100);
+}
+
+.tariff--profitably .tariff__link.button-primary {
+    color: var(--color-white);
+    background-color: var(--color-orange-80);
+}
+
+.tariff__remark {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 1;
+    display: none;
+    padding: 0.5rem 2rem;
+    color: var(--color-white);
+    font: var(--font-type-23);
+    background-color: var(--color-black-100);
+    border-radius: 0 0 0 1.5rem;
+}
+
+.tariff--profitably  .tariff__remark {
+    display: block;
+    background-color: var(--color-orange-80);
+}
+
+.tariff--for-bisness .tariff__list {
+    display: none;
+}
+
+.tariff--for-bisness .tariff__price {
+    display: none;
+}
+
+.tariff--for-bisness .tariff__text {
+    display: block;
+}
+
+@media (any-hover: hover) {
+    .tariff--profitably .tariff__link.button-primary:hover {
+        background-color: var(--color-orange-100);
+    }
+}

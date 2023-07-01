@@ -1,0 +1,104 @@
+.button-ghost {
+    position: relative;
+    display: flex;
+    align-items: center;
+    column-gap: 0.5rem;
+    padding: 0.9rem 1rem;
+    color: var(--color-blue-100);
+    font: var(--font-btn-s);
+    background-color: var(--color-blue-10);
+    border-radius: 5rem;
+    border-style: solid;
+    border-width: 0.1rem;
+    border-color: var(--color-blue-20);
+}
+
+.button-ghost--size-l {
+    column-gap: 1rem;
+    padding: 1.5rem 2.5rem;
+    font: var(--font-btn-m);
+}
+
+.button-ghost--size-m {
+    padding: 1rem 1.5rem;
+    font: var(--font-btn-s);
+}
+
+.button-ghost--orange {
+    color: var(--color-orange-100);
+    background-color: var(--color-orange-10);
+    border-color: transparent;
+}
+
+.button-ghost i {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 1;
+    display: none;
+    height: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.button-ghost._loader{
+    color: transparent;
+    pointer-events: none;
+}
+
+.button-ghost._loader i {
+    display: block;
+}
+
+.button-ghost:active {
+    color: var(--color-white);
+    background-color: var(--color-blue-100);
+}
+
+.button-ghost:disabled {
+    pointer-events: none;
+    color: var(--color-black-20);
+    background-color: var(--color-grey-100);
+    border-color: transparent;
+}
+
+.button-ghost--orange .button-ghost__span-icon {
+    fill: var(--color-orange-100);
+}
+
+.button-ghost .button-ghost__span-icon .icon {
+    width: 1.7rem;
+    height: 1.7rem;
+}
+
+.button-ghost--size-l .button-ghost__span-icon .icon{
+    width: 2.4rem;
+    height: 2.4rem;
+}
+
+@media (any-hover: hover) {
+    .button-ghost:hover {
+        background-color: var(--color-blue-20);
+    }
+
+    .button-ghost.button-ghost--orange:hover {
+        background-color: var(--color-orange-20);
+    }
+
+    .button-ghost:active:hover {
+        background-color: var(--color-blue-100);
+    }
+}
+
+
+@media (max-width : 576px) {
+    .button-ghost--size-l {
+        column-gap: 1rem;
+        padding: 1rem 1.5rem;
+        font: var(--font-btn-m);
+    }
+
+    .button-ghost--size-m {
+        padding: 0.8rem 1.2rem;
+        font: var(--font-btn-s);
+    }
+}

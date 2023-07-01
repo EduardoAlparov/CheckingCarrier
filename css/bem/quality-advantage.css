@@ -1,0 +1,36 @@
+.quality-advantage {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    padding: 2.5rem 0.5rem 2.5rem 2.1rem;
+}
+
+.quality-advantage__icon {
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 4.2rem;
+    height: 4.2rem;
+    margin-bottom: var(--gap);
+}
+
+.quality-advantage__icon .icon {
+    width: 2.8rem;
+    height: 2.8rem;
+}
+
+.quality-advantage__title {
+    margin-bottom: 1rem;
+}
+
+.quality-advantage__text {
+    font-weight: 400;
+    color: var(--color-black-60);
+}
+
+@media (max-width : 992px) {
+    .quality-advantage {
+        padding: 1.5rem;
+    }
+}

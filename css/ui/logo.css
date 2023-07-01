@@ -1,0 +1,17 @@
+.logo {
+    width: 13.4rem;
+    height: 4.2rem;
+}
+
+.logo--big {
+    width: 15.4rem;
+    height: 4.8rem;
+}
+
+/* @media (max-width : 768px) {
+    .logo,
+    .logo--big {
+        width: 10rem;
+        height: 3.125rem;
+    }
+} */

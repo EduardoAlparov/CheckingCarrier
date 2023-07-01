@@ -1,0 +1,67 @@
+.report-example {
+    background: var(--color-white);
+    border: 0.1rem solid var(--color-black-10);
+    border-radius: 2rem;
+}
+
+.report-example__body {
+    width: 100%;
+    height: 100%;
+    padding: 5rem 0 5rem 3rem;
+}
+
+.report-example__title {
+    margin-bottom: 1.7rem;
+    color: var(--color-ex-title);
+    font: var(--font-type-30);
+}
+
+.report-example__text {
+    margin-bottom: 2rem;
+    color: var(--color-ex-text);
+    font: var(--font-type-15);
+}
+
+.report-example__brief-description {
+    margin-bottom: 3.2rem;
+}
+
+
+.report-example__nav {
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    column-gap: 2.4rem;
+    margin-bottom: 3.2rem;
+}
+
+.report-example__btn {
+    padding-bottom: 0.4rem;
+    color: var(--color-ex-text);
+    font: var(--font-btn-s);
+    letter-spacing: 0.1008px;
+    border-width: 0 0 0.2rem 0;
+    border-style: solid;
+    border-color: transparent;
+}
+
+.report-example__btn--active {
+    color: var(--color-black-100);
+    border-color: var(--color-blue-100);
+}
+
+.report-example__windows-item {
+    display: none;
+}
+
+.report-example__windows-item--visible {
+    display: block;
+}
+
+@media (max-width : 768px) {
+    .report-example__body {
+        width: 100%;
+        height: 100%;
+        padding: 2rem 1rem;
+    }
+}

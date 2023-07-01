@@ -1,0 +1,50 @@
+.report-item {
+
+}
+
+.report-item__title {
+    margin-bottom: 2.4rem;
+    color: var(--color-black-100);
+    font: var(--font-type-23);
+    font-weight: 400;
+    line-height: 146%;
+}
+
+.report-item__document-list {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-bottom: 3.2rem;
+}
+
+.report-item__document {
+    display: flex;
+    flex-direction: column;
+}
+
+.report-item__document-name {
+    color: var(--color-ex-text);
+    font: var(--font-type-11);
+    font-weight: 400;
+    line-height: 133%;
+}
+
+.report-item__document-value {
+    color: var(--color-black-100);
+    font: var(--font-type-15);
+    font-weight: 400;
+    line-height: 233%;
+}
+
+.report-item__informations {
+    display: flex;
+    flex-direction: column;
+}
+
+.report-item__information {
+    margin-bottom: 3.2rem;
+}
+
+.report-item__information:last-child {
+    margin-bottom: 0;
+}

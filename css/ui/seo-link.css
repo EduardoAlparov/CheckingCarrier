@@ -1,0 +1,14 @@
+.seo-link {
+    display: inline-block;
+    color: var(--color-blue-100);
+    font: var(--font-type-19);
+    font-weight: 400;
+    line-height: 132.19%;
+    text-decoration: underline;
+}
+
+@media (any-hover: hover) {
+    .seo-link:hover {
+        color: var(--color-blue-80);
+    }
+}

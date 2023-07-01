@@ -1,0 +1,73 @@
+.button-primary {
+    position: relative;
+    padding: 0.9rem 1rem;
+    color: var(--color-grey-6);
+    font: var(--font-btn-s);
+    background-color: var(--color-blue-100);
+    border-radius: 0.5rem;
+}
+
+.button-primary > span {
+    white-space: nowrap;
+}
+
+.button-primary--size-l {
+    padding: 2rem 3.5rem;
+    font: var(--font-btn-l);
+    border-radius: 1rem;
+}
+
+.button-primary--size-m {
+    padding: 1.5rem 2.5rem;
+    font: var(--font-btn-l);
+    border-radius: 1rem;
+}
+
+.button-primary:active {
+    background-color: var(--color-blue-active);
+}
+
+.button-primary:disabled {
+    pointer-events: none;
+    color: var(--color-black-20);
+    background-color: var(--color-grey-100);
+}
+
+.button-primary i {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 1;
+    display: none;
+    height: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.button-primary._loader{
+    color: transparent;
+    pointer-events: none;
+}
+
+.button-primary._loader i {
+    display: block;
+}
+
+@media (any-hover: hover) {
+    .button-primary:hover {
+        background-color: var(--color-blue-hover);
+    }
+
+    .button-primary:active:hover {
+        background-color: var(--color-blue-100);
+    }
+}
+
+@media (max-width : 576px) {
+    .button-primary--size-l {
+        padding: 1.5rem 2.5rem;
+    }
+
+    .button-primary--size-m {
+        padding: 1rem 1.5rem;
+    }
+}

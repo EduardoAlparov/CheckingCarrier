@@ -1,0 +1,26 @@
+.check-menu {
+    display: flex;
+    column-gap: 10rem;
+    min-width: 60.9rem;
+    padding: 3rem;
+    background-color: var(--color-white);
+    border-radius: 1rem;
+}
+
+.check-menu__menu {
+    display: flex;
+    flex-direction: column;
+}
+
+.check-menu__title {
+    margin-bottom: var(--gap);
+}
+
+
+.check-menu__item {
+    margin-bottom: var(--gap);
+}
+
+.check-menu__item:last-child {
+    margin-bottom: 0;
+}

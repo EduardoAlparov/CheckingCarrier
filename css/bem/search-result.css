@@ -1,0 +1,30 @@
+.search-result__chapter {
+    padding-bottom: 5rem;
+    border-style: solid;
+    border-width: 0 0 0.1rem 0;
+    border-color: var(--color-black-10);
+}
+
+.search-result__chapter:not(:first-child) {
+    padding-top: 5rem;
+
+}
+
+.search-result__title {
+    margin-bottom: 3rem;
+}
+
+.search-result__value {
+    color: var(--color-blue-100);
+}
+
+
+.search-result__chapter-title {
+    margin-bottom: 2rem;
+    color: var(--color-black-100);
+    font-weight: 400;
+}
+
+.search-result__plug {
+    padding-top: 5rem;
+}

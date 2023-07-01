@@ -1,0 +1,8 @@
+.about-intro__title {
+    margin-bottom: 2rem;
+    color: var(--color-black-40);
+}
+
+.about-intro__title-blue-span {
+    color: var(--color-blue-100);
+}

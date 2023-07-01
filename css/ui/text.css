@@ -1,0 +1,35 @@
+.h1, .h2, .h3, .h4 {
+    color: var(--color-black-100);
+}
+
+.h1 {
+    font: var(--font-type-40);
+}
+
+.h2 {
+    font: var(--font-type-33);
+}
+
+.h3 {
+    font: var(--font-type-23);
+}
+
+.h4 {
+    font: var(--font-type-19);
+}
+
+.text-type-16 {
+    font: var(--font-type-16);
+}
+
+.text-type-13 {
+    font: var(--font-type-13);
+}
+
+.text-type-11 {
+    font: var(--font-type-11);
+}
+
+.text-color-b100 {
+    color: var(--color-blue-100);
+}

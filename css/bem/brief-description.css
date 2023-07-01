@@ -1,0 +1,58 @@
+.brief-description {
+    padding: 0 1rem 0 0;
+}
+
+.brief-description__button {
+    display: flex;
+    width: 100%;
+    align-items: stretch;
+    justify-content: space-between;
+    padding: 0.4rem 1.6rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+}
+
+.brief-description__button-span {
+    color: var(--color-ex-title);
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 219%;
+}
+
+.brief-description__button-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 2rem;
+}
+
+.brief-description__button-icon .icon {
+    max-height: 2.4rem;
+    fill: var(--color-blue-100);
+    stroke: var(--color-blue-100);
+}
+
+.brief-description__content {
+    padding: 2rem 1rem;
+    color: var(--color-ex-text);
+    font: var(--font-type-15);
+    display: none;
+}
+
+.brief-description__body--is-open .brief-description__button {
+    background-color: var(--color-blue-10);
+}
+
+.brief-description__body--is-open .brief-description__button-icon {
+    transform: rotate(180deg);
+}
+
+.brief-description__body--is-open .brief-description__content {
+    display: block;
+}
+
+@media (any-hover: hover) {
+    .brief-description__button:hover {
+        background-color: var(--color-blue-10);
+    }
+}

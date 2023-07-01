@@ -1,0 +1,57 @@
+.dialog {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 100;
+    width: 100%;
+    height: 100%;
+    max-height: unset;
+    margin: unset;
+    padding: 0;
+    border: none;
+}
+
+.dialog__body {
+    flex-grow: 1;
+    width: 100%;
+    height: 100%;
+    padding: 10rem 3rem 3rem 3rem;
+}
+
+.dialog__content {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 0;
+    border-style: solid;
+    border-width: 0.1rem 0 0 0;
+    border-color: var(--color-black-10);
+}
+
+.dialog__row {
+    padding: 1.5rem 0;
+    border-style: solid;
+    border-width: 0 0 0.1rem 0;
+    border-color: var(--color-black-10);
+}
+
+.dialog__row:first-child {
+    padding-top: 0;
+}
+
+.dialog__row:last-child {
+    border-width: 0;
+}
+
+.dialog__search {
+    margin-top: 1.5rem;
+    padding: 1.5rem;
+    background-color: var(--color-grey-100);
+    border-radius: 0.5rem;
+}
+
+@media (min-width : 992px) {
+    .dialog {
+        display: none !important;
+    }
+}

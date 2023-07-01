@@ -1,0 +1,25 @@
+.news-item-section {
+    padding: 5rem 0;
+}
+
+.news-item-section__content {
+    max-width: 100.8rem;
+    margin: 0 auto;
+}
+
+.news-item-section__navs {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 5rem 0 2rem;
+}
+
+@media (max-width : 992px) {
+    .news-item-section {
+        padding: 2rem 0;
+    }
+
+    .news-item-section__navs {
+        margin: 2rem 0;
+    }
+}

@@ -1,0 +1,90 @@
+.visit-card {
+    position: relative;
+    overflow: hidden;
+    height: 100%;
+    padding: 5rem 6rem;
+    background-image: url('../../images/decore/visit-card-decore.png');
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    background-size: auto 100%;
+    border: 0.1rem solid var(--color-blue-10);
+    border-radius: 2rem;
+}
+
+.visit-card--about {
+    background-position: left 200% bottom 100%;
+}
+
+.visit-card__body {
+    position: relative;
+    z-index: 5;
+}
+
+.visit-card__logo {
+    margin-bottom: 3.4rem;
+}
+
+.visit-card__item {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 3rem;
+}
+
+.visit-card__item:last-child {
+    margin-bottom: 0;
+}
+
+.visit-card__key {
+    margin-bottom: 0.5rem;
+}
+
+.visit-card__value {
+    color: var(--color-black-100);
+    font: var(--font-type-23);
+}
+
+.visit-card__image {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+    width: 56%;
+    height: 100%;
+}
+
+.visit-card--about .visit-card__image {
+    right: -5rem;
+    width: 52%;
+}
+
+@media (max-width : 992px) {
+    .visit-card {
+        padding: 2rem 3rem;
+        border-radius: 1rem;
+    }
+
+    .visit-card__image {
+        width: 70%;
+    }
+}
+
+@media (max-width : 768px) {
+    .visit-card__logo {
+        margin-bottom: 2.4rem;
+    }
+
+    .visit-card__item {
+        margin-bottom: 2rem;
+    }
+
+    .visit-card__item:last-child {
+        margin-bottom: 0;
+    }
+}
+
+@media (max-width : 576px) {
+    .visit-card__image {
+        bottom: -1rem;
+        width: 60%;
+    }
+}

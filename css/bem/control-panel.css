@@ -1,0 +1,27 @@
+.control-panel {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    column-gap: 6.8rem;
+    padding: 2.4rem 3rem;
+    background-color: var(--color-grey-100);
+}
+
+.control-panel__search {
+    flex: 1 0 auto;
+}
+
+.control-panel__check-menu {
+    position: absolute;
+    top: calc(100% + 1rem);
+    right: 0;
+    display: none;
+}
+
+.control-panel__search-result {
+    position: absolute;
+    top: calc(100% + 1rem);
+    left: 0;
+    display: none;
+}

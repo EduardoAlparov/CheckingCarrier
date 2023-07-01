@@ -1,0 +1,10 @@
+.contacts__list {
+    display: flex;
+    align-items: center;
+    column-gap: 5rem;
+}
+
+.contacts__list--wrap {
+    flex-wrap: wrap;
+    gap: 2rem;
+}

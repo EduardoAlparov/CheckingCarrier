@@ -1,0 +1,151 @@
+.sample-page__article {
+    margin-bottom: 5rem;
+}
+
+.sample-page__article:last-child {
+    margin-bottom: 0;
+}
+
+.sample-page__title {
+    margin-bottom: 2rem;
+}
+
+.sample-page__gallery {
+    margin-bottom: 5rem;
+}
+
+.sample-page__gallery:last-child {
+    margin-bottom: 0;
+}
+
+.sample-page__gallery .gallery__image-wrapper {
+    margin-bottom: 2rem;
+}
+
+ul.sample-page__text-list {
+    list-style: inside !important;
+}
+
+ol.sample-page__text-list {
+    list-style: decimal inside none !important;
+}
+
+.sample-page__text-item {
+    font: var(--font-type-19);
+    line-height: 140%;
+}
+
+.sample-page__text-item::marker {
+    font-size: 1.6rem;
+}
+
+.sample-page__texts .news-item-slider__text:last-child {
+    margin-bottom: 0;
+}
+
+.divTable {
+	display: table;
+	width: 100%;
+    border: 0.1rem solid var(--color-black-10);
+    border-radius: 5px;
+}
+
+.divTableRow {
+	display: table-row;
+    border: 0.1rem solid var(--color-black-10);
+}
+
+.divTableHeading {
+	display: table-header-group;
+	background-color: #EEE;
+}
+
+.divTableCell, .divTableHead {
+	display: table-cell;
+	padding: 0.8rem 1.5rem;
+    font-size: 1.6rem;
+	border: 0.05rem solid var(--color-black-10);
+}
+
+.divTableHead {
+	background-color: var(--color-grey-100);
+}
+
+.divTableHead:first-child {
+	border-radius: 5px 0 0 0;
+}
+
+.divTableHead:last-child {
+	border-radius: 0 5px 0 0;
+}
+
+.divTableFoot:first-child {
+	border-radius: 0 0 0 5px;
+}
+
+.divTableFoot:last-child {
+	border-radius: 0 0 5px 0;
+}
+
+.divTableBody {
+	display: table-row-group;
+}
+
+.sample-page__gallery.sample-page__slide {
+    margin-bottom: 0;
+}
+
+.sample-page__button {
+    position: absolute;
+    top: 50%;
+    z-index: 50;
+    transform: translateY(-50%);
+}
+
+.sample-page__button .icon {
+    width: 3.2rem;
+    height: 3.2rem;
+    stroke: var(--color-white);
+}
+
+.sample-page__button--prev .icon {
+    transform: rotate(180deg);
+}
+
+.sample-page__button--prev {
+    left: 3.4rem;
+}
+
+.sample-page__button--next {
+    right: 3.4rem;
+}
+
+.sample-page__button:disabled {
+    opacity: 0;
+}
+
+@media (any-hover: hover) {
+    .sample-page__button:hover {
+        transform: translateY(-50%) scale(1.1);
+    }
+}
+
+@media (max-width : 992px) {
+    .divTableCell, .divTableHead {
+        font-size: 1.4rem;
+    }
+}
+
+@media (max-width : 768px) {
+    .divTableCell, .divTableHead {
+        font-size: 1.2rem;
+        padding: 0.8rem 1rem;
+    }
+}
+
+@media (max-width : 576px) {
+    .divTableCell, .divTableHead {
+        font-size: 1rem;
+        padding: 0.5rem 0.8rem;
+    }
+}

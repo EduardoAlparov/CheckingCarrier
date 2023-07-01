@@ -1,0 +1,41 @@
+.member {
+    width: 100%;
+}
+
+.member__image {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 0;
+    padding-bottom: 100%;
+    margin-bottom: 1rem;
+    border-radius: 1rem;
+}
+
+.member__image > img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 1;
+    height: 100%;
+    min-width: 100%;
+    transform: translate(-50%, -50%);
+    object-fit: cover;
+    object-position: center;
+}
+
+.member__info {
+    display: flex;
+    flex-direction: column;
+}
+
+.member__name {
+    color: var(--color-black-100);
+    font-weight: 500;
+    line-height: 150%;
+}
+
+.member__role {
+    font: var(--font-type-13);
+    line-height: 150%;
+}

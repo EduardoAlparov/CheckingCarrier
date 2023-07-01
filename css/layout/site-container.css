@@ -1,0 +1,19 @@
+[class*="__site-container"] {
+    margin: 0 auto;
+    max-width: 142rem;
+    width: 100%;
+    padding: 0 2.4rem;
+}
+
+@media (max-width : 1280px) {
+    [class*="__site-container"] {
+        max-width: 100%;
+        padding: 0 2rem;
+    }
+}
+
+@media (max-width : 768px) {
+    [class*="__site-container"] {
+        padding: 0 1rem;
+    }
+}

@@ -1,0 +1,11 @@
+.menu__list {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.menu__list--wrap {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 1rem;
+}

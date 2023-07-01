@@ -1,0 +1,9 @@
+.feedback--page {
+    margin-bottom: 5rem;
+}
+
+@media (max-width : 768px) {
+    .feedback--page {
+        margin-bottom: 2rem;
+    }
+}

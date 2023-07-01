@@ -1,0 +1,59 @@
+.header {
+    position: absolute;
+    top: 2rem;
+    right: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+}
+
+.header__site-container {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 1rem;
+}
+
+.header__above {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem 3rem;
+}
+
+.header__logo {
+    display: none;
+}
+
+.header__hamburger {
+    display: none;
+}
+
+@media (max-width : 992px) {
+    .header {
+        top: 1rem;
+    }
+
+    .header__above {
+        padding: 1rem 0;
+    }
+
+    .header__basement {
+        display: none;
+    }
+
+    .header__logo {
+        display: block;
+    }
+
+    .header__menu {
+        display: none;
+    }
+
+    .header__contacts {
+        display: none;
+    }
+
+    .header__hamburger {
+        display: block;
+    }
+}

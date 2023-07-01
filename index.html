@@ -1,0 +1,1895 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+	<meta charset="utf-8">
+
+	<title>Главная </title>
+	<meta name="description" content="Simple Starter Description">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+	<link rel="icon" href="images/favicon.png">
+	<meta property="og:image" content="images/preview.jpg">
+
+	<link rel="stylesheet" href="css/styles.css">
+
+	<link
+		rel="stylesheet"
+		href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+	/>
+
+	<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+	<script src="js/common.js" defer></script>
+
+</head>
+
+<body class="preload page-main">
+	<header class="header">
+		<div class="header__site-container">
+			<div class="header__basement">
+				<div class="control-panel border-radius">
+					<a href="/" class="control-panel__logo logo">
+						<svg class="icon">
+							<use xlink:href="./images/sprite.svg#logo"></use>
+						</svg>
+					</a>
+
+					<form class="control-panel__search search">
+						<span class="search__icon">
+							<svg class="icon">
+								<use xlink:href="./images/sprite.svg#search"></use>
+							</svg>
+						</span>
+						<input type="text" class="search__input input js-search-input" placeholder="Поиск по сайту" required>
+						<button type="reset" class="search__clear">
+							<svg class="icon">
+								<use xlink:href="./images/sprite.svg#input-close"></use>
+							</svg>
+						</button>
+					</form>
+
+					<div class="control-panel__controls controls">
+						<ul class="controls__list">
+							<li class="controls__item">
+								<a href="#" class="controls__link control-link js-check-btn">
+									<span>
+										Проверка
+									</span>
+									<i>
+										<svg class="icon">
+											<use xlink:href="./images/sprite.svg#arrow-d"></use>
+										</svg>
+									</i>
+								</a>
+							</li>
+							<li class="controls__item">
+								<a href="#" class="controls__link link">
+									<span>
+										Для бизнеса
+									</span>
+								</a>
+							</li>
+							<li class="controls__item">
+								<a href="#" class="controls__link button-primary">
+									<span>
+										Выбрать тариф
+									</span>
+									<i>
+										<svg class="icon">
+											<use xlink:href="./images/sprite.svg#loader"></use>
+										</svg>
+									</i>
+								</a>
+							</li>
+						</ul>
+					</div>
+
+					<div class="control-panel__check-menu">
+						<div class="check-menu">
+							<div class="check-menu__menu">
+								<div class="h3 check-menu__title">
+									Что проверяем
+								</div>
+								<ul class="check-menu__list">
+									<li class="check-menu__item">
+										<a href="#" class="check-menu__link check-link">
+											<div class="check-link__icon-wrapper">
+												<span class="check-link__icon">
+													<svg class="icon">
+														<use xlink:href="./images/sprite.svg#report-one"></use>
+													</svg>
+												</span>
+											</div>
+											<span class="check-link__text">
+												Штрафы
+											</span>
+										</a>
+									</li>
+									<li class="check-menu__item">
+										<a href="#" class="check-menu__link check-link">
+											<div class="check-link__icon-wrapper">
+												<span class="check-link__icon">
+													<svg class="icon">
+														<use xlink:href="./images/sprite.svg#report-two"></use>
+													</svg>
+												</span>
+											</div>
+											<span class="check-link__text">
+												Водитель
+											</span>
+										</a>
+									</li>
+									<li class="check-menu__item">
+										<a href="#" class="check-menu__link check-link">
+											<div class="check-link__icon-wrapper">
+												<span class="check-link__icon">
+													<svg class="icon">
+														<use xlink:href="./images/sprite.svg#report-three"></use>
+													</svg>
+												</span>
+											</div>
+											<span class="check-link__text">
+												Задолженность
+											</span>
+										</a>
+									</li>
+									<li class="check-menu__item">
+										<a href="#" class="check-menu__link check-link">
+											<div class="check-link__icon-wrapper">
+												<span class="check-link__icon">
+													<svg class="icon">
+														<use xlink:href="./images/sprite.svg#report-four"></use>
+													</svg>
+												</span>
+											</div>
+											<span class="check-link__text">
+												Транспортная компания
+											</span>
+										</a>
+									</li>
+									<li class="check-menu__item">
+										<a href="#" class="check-menu__link check-link">
+											<div class="check-link__icon-wrapper">
+												<span class="check-link__icon">
+													<svg class="icon">
+														<use xlink:href="./images/sprite.svg#report-five"></use>
+													</svg>
+												</span>
+											</div>
+											<span class="check-link__text">
+												Автомобиль
+											</span>
+										</a>
+									</li>
+								</ul>
+							</div>
+							<div class="check-menu__menu">
+								<div class="h3 check-menu__title">
+									Как проверяем
+								</div>
+								<ul class="check-menu__list">
+									<li class="check-menu__item">
+										<a href="#" class="check-menu__link check-link">
+											<span class="check-link__text">
+												По ИНН
+											</span>
+										</a>
+									</li>
+									<li class="check-menu__item">
+										<a href="#" class="check-menu__link check-link">
+											<span class="check-link__text">
+												По VIN
+											</span>
+										</a>
+									</li>
+									<li class="check-menu__item">
+										<a href="#" class="check-menu__link check-link">
+											<span class="check-link__text">
+												По СТС
+											</span>
+										</a>
+									</li>
+									<li class="check-menu__item">
+										<a href="#" class="check-menu__link check-link">
+											<span class="check-link__text">
+												По В/У
+											</span>
+										</a>
+									</li>
+									<li class="check-menu__item">
+										<a href="#" class="check-menu__link check-link">
+											<span class="check-link__text">
+												По гос. номеру
+											</span>
+										</a>
+									</li>
+									<li class="check-menu__item">
+										<a href="#" class="check-menu__link check-link">
+											<span class="check-link__text">
+												По паспорту РФ
+											</span>
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+
+					<div class="control-panel__search-result">
+						<div class="result result-is-finded">
+							<div class="result__body">
+								<div class="h2 result__heading">
+									<span>Результаты поиска</span>
+									<span>(</span><span class="result__value">6</span><span>)</span>
+								</div>
+
+								<div class="result__list-wrapper">
+									<ul class="result__list">
+										<li class="result__item">
+											<a href="#" class="result__link">
+												<div class="result__variant">
+													<span class="result__finded">
+														Проверка автомобиля на
+													</span>
+													<span class="result__inputed">
+														штрафы
+													</span>
+												</div>
+												<div class="result__type">
+													<span class="result__type-value">
+														Услуга
+													</span>
+												</div>
+											</a>
+										</li>
+									</ul>
+
+									<div class="result__add">
+										<button class="news__load-btn">
+											<span>Посмотреть все результаты</span>
+											<span class="news__load-btn-icon">
+												<svg class="icon">
+													<use xlink:href="./images/sprite.svg#load-arrow"></use>
+												</svg>
+											</span>
+										</button>
+									</div>
+								</div>
+
+								<div class="result__plug">
+									Извините, но ничего не найдено.<br>
+									Попробуйте изменить запрос или <a href="#" class="seo-link">свяжитесь с нами</a>
+								</div>
+							</div>
+						</div>
+						<!-- <div class="result result-not-finded">
+							<div class="result__body">
+								<div class="h2 result__heading">
+									<span>Результаты поиска</span>
+									<span>(</span><span class="result__value">6</span><span>)</span>
+								</div>
+
+								<div class="result__list-wrapper">
+									<ul class="result__list">
+										<li class="result__item">
+											<a href="#" class="result__link">
+												<div class="result__variant">
+													<span class="result__finded">
+														Проверка автомобиля на
+													</span>
+													<span class="result__inputed">
+														штрафы
+													</span>
+												</div>
+												<div class="result__type">
+													<span class="result__type-value">
+														Услуга
+													</span>
+												</div>
+											</a>
+										</li>
+									</ul>
+
+									<div class="result__add">
+										<button class="news__load-btn">
+											<span>Посмотреть все результаты</span>
+											<span class="news__load-btn-icon">
+												<svg class="icon">
+													<use xlink:href="./images/sprite.svg#load-arrow"></use>
+												</svg>
+											</span>
+										</button>
+									</div>
+								</div>
+
+								<div class="result__plug">
+									Извините, но ничего не найдено.<br>
+									Попробуйте изменить запрос или <a href="#" class="seo-link">свяжитесь с нами</a>
+								</div>
+							</div>
+						</div> -->
+					</div>
+				</div>
+			</div>
+
+			<div class="header__above">
+				<a href="/" class="header__logo logo">
+					<svg class="icon">
+						<use xlink:href="./images/sprite.svg#logo"></use>
+					</svg>
+				</a>
+
+				<div class="header__menu menu">
+					<nav class="menu">
+						<ul class="menu__list">
+							<li class="menu__item">
+								<a href="./about.html" class="menu__link link">
+									О сервисе
+								</a>
+							</li>
+							<li class="menu__item">
+								<a href="./report-example.html" class="menu__link link">
+									Пример отчета
+								</a>
+							</li>
+							<li class="menu__item">
+								<a href="./blog.ru" class="menu__link link">
+									Блог
+								</a>
+							</li>
+							<li class="menu__item">
+								<a href="./contacts.html" class="menu__link link">
+									Контакты
+								</a>
+							</li>
+						</ul>
+					</nav>
+				</div>
+
+				<div class="header__contacts">
+					<div class="contacts">
+						<ul class="contacts__list">
+							<li class="contacts__item">
+								<a href="mailto: support@checking-carriers.ru" class="contacts__link contact">
+									<span class="contact__icon">
+										<svg class="icon">
+											<use xlink:href="./images/sprite.svg#envelop"></use>
+										</svg>
+									</span>
+									<span class="contact__text">support@checking-carriers.ru</span>
+								</a>
+							</li>
+							<li class="contacts__item">
+								<a href="tel:+7(953)-603-79-76" class="contacts__link contact">
+									<span class="contact__icon">
+										<svg class="icon">
+											<use xlink:href="./images/sprite.svg#phone"></use>
+										</svg>
+									</span>
+									<span class="contact__text">+7(953)-603-79-76</span>
+								</a>
+							</li>
+							<li class="contacts__item">
+								<a href="#" class="contacts__link contact">
+									<span class="contact__icon">
+										<svg class="icon">
+											<use xlink:href="./images/sprite.svg#telegram"></use>
+										</svg>
+									</span>
+									<span class="contact__text">checking-carriers</span>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="header__hamburger">
+					<button class="hamburger hamburger--spring js-hamburger-btn" type="button">
+						<span class="hamburger-box">
+						  <span class="hamburger-inner"></span>
+						</span>
+					</button>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<div class="wrapper">
+		<main class="main">
+			<section class="sectiom intro">
+				<div class="intro__site-container">
+					<div class="intro__body">
+						<div class="intro__heading">
+							<h1 class="h1 intro__title">
+								<span class="">Подробная информацию	об</span>
+								<span class="text-color-b100">организации, водителе</span>
+								<span class="">и</span>
+								<span class="text-color-b100">автомобиле</span>
+								<span class="">в одном документе</span>
+							</h1>
+
+							<div class="intro__buttons">
+								<button class="button-primary button-primary--size-l">
+									<span>
+										Оставить заявку
+									</span>
+									<i>
+										<svg class="icon">
+											<use xlink:href="./images/sprite.svg#loader"></use>
+										</svg>
+									</i>
+								</button>
+
+								<a href="" download class="button-secondary button-secondary--size-l">
+									<span class="button-secondary__span-icon">
+										<svg class="icon">
+											<use xlink:href="./images/sprite.svg#file"></use>
+										</svg>
+									</span>
+									<span class>
+										Пример отчета
+									</span>
+								</a>
+							</div>
+
+							<div class="intro__heading-svg-wrapper">
+								<svg class="icon">
+									<use xlink:href="./images/sprite.svg#intro-car-mobile"></use>
+								</svg>
+							</div>
+						</div>
+
+						<div class="intro__image">
+							<div class="intro__svg-wrapper">
+								<svg class="icon">
+									<use xlink:href="./images/sprite.svg#intro-car"></use>
+								</svg>
+							</div>
+
+							<div class="intro__feature feature">
+								<div class="feature__body">
+									<div class="feature__icon">
+										<svg class="icon">
+											<use xlink:href="./images/sprite.svg#notification-feature"></use>
+										</svg>
+									</div>
+									<div class="feature__text">
+										Вся информация собрана
+										из официальных источников
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="intro__list verifications">
+							<h3 class="h3 verifications__title">Начать проверку</h3>
+							<ul class="verifications__list">
+								<li class="verifications__item">
+									<div class="verifications__link">
+										<a href="#" class="verification">
+											<div class="verification__body">
+												<span class="verification__text">Штрафы</span>
+												<span class="verification__image verification__image--fines">
+													<svg class="icon">
+														<use xlink:href="./images/sprite.svg#fines"></use>
+													</svg>
+												</span>
+											</div>
+										</a>
+									</div>
+								</li>
+								<li class="verifications__item">
+									<div class="verifications__link">
+										<a href="#" class="verification">
+											<div class="verification__body">
+												<span class="verification__text">Водитель</span>
+												<span class="verification__image verification__image--driver">
+													<svg class="icon">
+														<use xlink:href="./images/sprite.svg#driver"></use>
+													</svg>
+												</span>
+											</div>
+										</a>
+									</div>
+								</li>
+								<li class="verifications__item">
+									<div class="verifications__link">
+										<a href="#" class="verification">
+											<div class="verification__body">
+												<span class="verification__text">Автомобиль</span>
+												<span class="verification__image verification__image--car">
+													<svg class="icon">
+														<use xlink:href="./images/sprite.svg#car"></use>
+													</svg>
+												</span>
+											</div>
+										</a>
+									</div>
+								</li>
+								<li class="verifications__item">
+									<div class="verifications__link">
+										<a href="#" class="verification">
+											<div class="verification__body">
+												<span class="verification__text">Задолженность</span>
+												<span class="verification__image verification__image--debt">
+													<svg class="icon">
+														<use xlink:href="./images/sprite.svg#debt"></use>
+													</svg>
+												</span>
+											</div>
+										</a>
+									</div>
+								</li>
+								<li class="verifications__item">
+									<div class="verifications__link">
+										<a href="#" class="verification">
+											<div class="verification__body">
+												<span class="verification__text">Транспортная компания</span>
+												<span class="verification__image verification__image--tcompany">
+													<svg class="icon">
+														<use xlink:href="./images/sprite.svg#tcompany"></use>
+													</svg>
+												</span>
+											</div>
+										</a>
+									</div>
+								</li>
+							</ul>
+						</div>
+
+						<div class="intro__border">
+							<svg class="icon">
+								<use xlink:href="./images/sprite.svg#border"></use>
+							</svg>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="section advantages">
+				<div class="advantages__site-container">
+					<div class="section__body advantages__body">
+						<div class="h1 advantages__title">Checking Carriers — помогаем<br> проверять партнеров в России</div>
+
+						<ul class="advantages__list advantages__list--top">
+							<li class="advantages__item">
+								<div class="quality-advantage border-radius border-outline border-outline--grey">
+									<div class="quality-advantage__icon">
+										<svg class="icon">
+											<use xlink:href="./images/sprite.svg#advantage"></use>
+										</svg>
+									</div>
+									<span class="h2 quality-advantage__title">
+										Преимущественное качество опыта
+									</span>
+									<span class="h4 quality-advantage__text">
+										Описание к преимущественному качеству, которое
+										раскрывает содержание преимущества и не несет
+										в себе лишней информации
+									</span>
+								</div>
+							</li>
+							<li class="advantages__item">
+								<div class="quality-advantage border-radius border-outline border-outline--grey">
+									<div class="quality-advantage__icon">
+										<svg class="icon">
+											<use xlink:href="./images/sprite.svg#advantage"></use>
+										</svg>
+									</div>
+									<span class="h2 quality-advantage__title">
+										Преимущественное качество опыта
+									</span>
+									<span class="h4 quality-advantage__text">
+										Описание к преимущественному качеству, которое
+										раскрывает содержание преимущества и не несет
+										в себе лишней информации
+									</span>
+								</div>
+							</li>
+							<li class="advantages__item">
+								<div class="quality-advantage border-radius border-outline border-outline--grey">
+									<div class="quality-advantage__icon">
+										<svg class="icon">
+											<use xlink:href="./images/sprite.svg#advantage"></use>
+										</svg>
+									</div>
+									<span class="h2 quality-advantage__title">
+										Преимущественное качество опыта
+									</span>
+									<span class="h4 quality-advantage__text">
+										Описание к преимущественному качеству, которое
+										раскрывает содержание преимущества и не несет
+										в себе лишней информации
+									</span>
+								</div>
+							</li>
+						</ul>
+
+						<ul class="advantages__list advantages__list--main">
+							<li class="advantages__item">
+								<div class="our-advantage">
+									<div class="our-advantage__image">
+										<svg class="icon">
+											<use xlink:href="./images/sprite.svg#exam-fast"></use>
+										</svg>
+									</div>
+									<div class="our-advantage__info">
+										<span class="h3 our-advantage__title">Быстрая проверка</span>
+										<span class="h4 our-advantage__text quality-advantage__text">
+											Проверим компанию, водителя<br> и автомобиль в одном окне за 5 минут
+										</span>
+									</div>
+								</div>
+							</li>
+							<li class="advantages__item">
+								<div class="our-advantage">
+									<div class="our-advantage__image our-advantage__image--amount">
+										<svg class="icon">
+											<use xlink:href="./images/sprite.svg#exam-amount"></use>
+										</svg>
+									</div>
+									<div class="our-advantage__info">
+										<span class="h3 our-advantage__title">
+											Проверяйте большой<br> объем информации сразу
+										</span>
+										<span class="h4 our-advantage__text quality-advantage__text">
+											Запускайте до 10 проверок одновременно
+										</span>
+									</div>
+								</div>
+							</li>
+							<li class="advantages__item">
+								<div class="our-advantage">
+									<div class="our-advantage__image our-advantage__image--official">
+										<svg class="icon">
+											<use xlink:href="./images/sprite.svg#exam-official"></use>
+										</svg>
+									</div>
+									<div class="our-advantage__info">
+										<span class="h3 our-advantage__title">
+											Все официально
+										</span>
+										<span class="h4 our-advantage__text quality-advantage__text">
+											Все данные берем только<br> из официальных источников
+										</span>
+									</div>
+								</div>
+							</li>
+							<li class="advantages__item">
+								<div class="our-advantage">
+									<div class="our-advantage__image our-advantage__image--official">
+										<svg class="icon">
+											<use xlink:href="./images/sprite.svg#exam-print"></use>
+										</svg>
+									</div>
+									<div class="our-advantage__info">
+										<span class="h3 our-advantage__title">
+											Отчеты отправляем в печать
+										</span>
+										<span class="h4 our-advantage__text quality-advantage__text">
+											Реализованные отчеты отправляются
+											в печать
+										</span>
+									</div>
+								</div>
+							</li>
+							<li class="advantages__item">
+								<div class="our-advantage">
+									<div class="our-advantage__image our-advantage__image--amount">
+										<svg class="icon">
+											<use xlink:href="./images/sprite.svg#exam-history"></use>
+										</svg>
+									</div>
+									<div class="our-advantage__info">
+										<span class="h3 our-advantage__title">
+											Сохраняем всю историю
+											проверок
+										</span>
+										<span class="h4 our-advantage__text quality-advantage__text">
+											Никакая из проверок не потеряется
+										</span>
+									</div>
+								</div>
+							</li>
+							<li class="advantages__item">
+								<div class="our-advantage">
+									<div class="our-advantage__image our-advantage__image--online">
+										<svg class="icon">
+											<use xlink:href="./images/sprite.svg#exam-online"></use>
+										</svg>
+									</div>
+									<div class="our-advantage__info">
+										<span class="h3 our-advantage__title">
+											Оплачивайте онлайн
+										</span>
+										<span class="h4 our-advantage__text quality-advantage__text">
+											Все официально, чеки о покупке приходят
+											на указанный емайл при регистрации
+										</span>
+									</div>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</section>
+
+			<section class="section how-work">
+				<div class="how-work__site-container">
+					<div class="section__body">
+						<div class="h1 advantages__title">Как мы проверяем и что проверяем</div>
+						<ul class="advantages__list advantages__list--top">
+							<li class="advantages__item">
+								<div class="report">
+									<div class="report__body">
+										<div class="report__head">
+											<div class="report__btn">
+												<span class="report__icon">
+													<svg class="icon">
+														<use xlink:href="./images/sprite.svg#report-one"></use>
+													</svg>
+												</span>
+											</div>
+											<span class="report__slogan">
+												Приобрести отчет
+											</span>
+										</div>
+										<div class="report__info">
+											<span class="report__name">
+												Наличие штрафов
+											</span>
+											<div class="report__desc">
+												<span class="report__desc-dark">
+													По серии и номеру СТС и регистрационному номеру автомобиля
+												</span>
+												<span>
+													Вы сможете проверить автомобиль на наличие штрафов
+												</span>
+											</div>
+										</div>
+										<div class="report__buttons">
+											<a href="" class="report__link button-secondary button-secondary--size-m">
+												<span>
+													По В/У
+												</span>
+												<i>
+													<svg class="icon">
+														<use xlink:href="./images/sprite.svg#loader-blue"></use>
+													</svg>
+												</i>
+											</a>
+											<a href="" class="report__link button-secondary button-secondary--size-m">
+												<span>
+													По паспорту РФ
+												</span>
+												<i>
+													<svg class="icon">
+														<use xlink:href="./images/sprite.svg#loader-blue"></use>
+													</svg>
+												</i>
+											</a>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li class="advantages__item">
+								<div class="report">
+									<div class="report__body">
+										<div class="report__head">
+											<div class="report__btn">
+												<span class="report__icon">
+													<svg class="icon">
+														<use xlink:href="./images/sprite.svg#report-two"></use>
+													</svg>
+												</span>
+											</div>
+											<span class="report__slogan">
+												Приобрести отчет
+											</span>
+										</div>
+										<div class="report__info">
+											<span class="report__name">
+												Водителя
+											</span>
+											<div class="report__desc">
+												<span class="report__desc-dark">
+													По серии и номеру паспорта
+												</span>
+												<span>
+													водителя вы сможете узнать находится ли водитель в розыске
+												</span>
+											</div>
+											<div class="report__desc">
+												<span class="report__desc-dark">
+													По серии, номеру и дате выдачи прав
+												</span>
+												<span>
+													водителя сможете проверить факт выдачи
+													действующего водительского удостоверения
+													и информацию о лишении права управления
+												</span>
+											</div>
+										</div>
+										<div class="report__buttons">
+											<a href="" class="report__link button-secondary button-secondary--size-m">
+												<span>
+													По В/У
+												</span>
+												<i>
+													<svg class="icon">
+														<use xlink:href="./images/sprite.svg#loader-blue"></use>
+													</svg>
+												</i>
+											</a>
+											<a href="" class="report__link button-secondary button-secondary--size-m">
+												<span>
+													По паспорту РФ
+												</span>
+												<i>
+													<svg class="icon">
+														<use xlink:href="./images/sprite.svg#loader-blue"></use>
+													</svg>
+												</i>
+											</a>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li class="advantages__item">
+								<div class="report">
+									<div class="report__body">
+										<div class="report__head">
+											<div class="report__btn">
+												<span class="report__icon">
+													<svg class="icon">
+														<use xlink:href="./images/sprite.svg#report-three"></use>
+													</svg>
+												</span>
+											</div>
+											<span class="report__slogan">
+												Приобрести отчет
+											</span>
+										</div>
+										<div class="report__info">
+											<span class="report__name">
+												Автомобиль
+											</span>
+											<div class="report__desc">
+												<span class="report__desc-dark">
+													По VIN номеру автомобиля
+												</span>
+												<span>
+													Вы сможете проверить автомобиль на участие в
+													дорожно-транспортных происшествиях, нахождение
+													в розыске, ограничения и наличие диагностической
+													карты технического осмотра
+												</span>
+											</div>
+										</div>
+										<div class="report__buttons">
+											<a href="" class="report__link button-secondary button-secondary--size-m">
+												<span>
+													По VIN
+												</span>
+												<i>
+													<svg class="icon">
+														<use xlink:href="./images/sprite.svg#loader-blue"></use>
+													</svg>
+												</i>
+											</a>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li class="advantages__item">
+								<div class="report">
+									<div class="report__body">
+										<div class="report__head">
+											<div class="report__btn">
+												<span class="report__icon">
+													<svg class="icon">
+														<use xlink:href="./images/sprite.svg#report-four"></use>
+													</svg>
+												</span>
+											</div>
+											<span class="report__slogan">
+												Приобрести отчет
+											</span>
+										</div>
+										<div class="report__info">
+											<span class="report__name">
+												Задолженность
+											</span>
+											<div class="report__desc">
+												<span class="report__desc-dark">
+													По ФИО, дате рождения и коду региона
+												</span>
+												<span>
+													вы сможете проверить наличие задолженностей
+													водителя в базе судебных приставов
+												</span>
+											</div>
+										</div>
+										<div class="report__buttons">
+											<a href="" class="report__link button-secondary button-secondary--size-m">
+												<span>
+													По паспорту РФ
+												</span>
+												<i>
+													<svg class="icon">
+														<use xlink:href="./images/sprite.svg#loader-blue"></use>
+													</svg>
+												</i>
+											</a>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li class="advantages__item">
+								<div class="report">
+									<div class="report__body">
+										<div class="report__head">
+											<div class="report__btn">
+												<span class="report__icon">
+													<svg class="icon">
+														<use xlink:href="./images/sprite.svg#report-five"></use>
+													</svg>
+												</span>
+											</div>
+											<span class="report__slogan">
+												Приобрести отчет
+											</span>
+										</div>
+										<div class="report__info">
+											<span class="report__name">
+												Транспортную компанию
+											</span>
+											<div class="report__desc">
+												<span class="report__desc-dark">
+													По ИНН
+												</span>
+												<span>
+													Вы сможете узнать подробную информация об организации.
+												</span>
+											</div>
+											<div class="report__desc">
+												<span>
+													Например, действующая ли она
+												</span>
+											</div>
+										</div>
+										<div class="report__buttons">
+											<a href="" class="report__link button-secondary button-secondary--size-m">
+												<span>
+													По ИНН
+												</span>
+												<i>
+													<svg class="icon">
+														<use xlink:href="./images/sprite.svg#loader-blue"></use>
+													</svg>
+												</i>
+											</a>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li class="advantages__item">
+								<div class="floating-link">
+									<div class="floating-link__body">
+										<div class="floating-link__title">
+											Получите готовый<br> отчет за 5 минут
+										</div>
+										<a href="" class="floating-link__button button-secondary button-secondary--size-m">
+											<span>
+												Получить отчет
+											</span>
+											<i>
+												<svg class="icon">
+													<use xlink:href="./images/sprite.svg#loader-blue"></use>
+												</svg>
+											</i>
+										</a>
+									</div>
+									<div class="floating-link__image">
+										<svg class="icon">
+											<use xlink:href="./images/sprite.svg#floatlink-pic"></use>
+										</svg>
+									</div>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</section>
+
+			<section class="section gallery">
+				<div class="gallery__site-container">
+					<div class="gallery__body section__body">
+						<div class="gallery__body h1 advantages__title">
+							Мы станем вашими партнерами
+						</div>
+
+						<div class="gallery__image-wrapper">
+							<img src="./images/placeholder.jpg" alt="">
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="section tariffs">
+				<div class="tariffs__site-container">
+					<div class="tariffs__body section__body">
+						<div class="tariffs__body h1 advantages__title">
+							Тарифы и цены
+						</div>
+						<ul class="advantages__list">
+							<li class="advantages__item">
+								<div class="tariff">
+									<div class="tariff__body">
+										<div class="tariff__icon">
+											<svg class="icon">
+												<use xlink:href="./images/sprite.svg#tariff-one"></use>
+											</svg>
+										</div>
+
+										<div class="h2 tariff__title">
+											Один отчет
+										</div>
+
+										<div class="tariff__text">
+											<p>
+												Возможно согласование скидки при большом количестве запросов в ручном режиме.
+											</p>
+										</div>
+
+										<ul class="tariff__list">
+											<li class="tariff__item">
+												<span class="tariff__key">Срок хранения</span>
+												<span class="tariff__value">Вечно</span>
+											</li>
+											<li class="tariff__item">
+												<span class="tariff__key">Характеристика</span>
+												<span class="tariff__value">Значение характеристики</span>
+											</li>
+											<li class="tariff__item">
+												<span class="tariff__key">Характеристика</span>
+												<span class="tariff__value">Значение характеристики</span>
+											</li>
+										</ul>
+
+										<div class="tariff__price">
+											<div class="tariff__price-value">
+												<span class="tariff__price-number">150</span>
+												<span class="tariff__price-sign">&#8381;</span>
+											</div>
+
+											<div class="tariff__price-text">
+												<span>за отчет</span>
+											</div>
+										</div>
+
+										<a href="#" class="tariff__link button-primary button-primary--size-m ">
+											<span>
+												Купить отчет за 150 ₽
+											</span>
+											<i>
+												<svg class="icon">
+													<use xlink:href="./images/sprite.svg#loader"></use>
+												</svg>
+											</i>
+										</a>
+
+										<div class="tariff__remark">
+											<span>
+												Выгодно
+											</span>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li class="advantages__item">
+								<div class="tariff tariff--profitably">
+									<div class="tariff__body">
+										<div class="tariff__icon">
+											<svg class="icon icon-tariff-two">
+												<use xlink:href="./images/sprite.svg#tariff-two"></use>
+											</svg>
+										</div>
+
+										<div class="h2 tariff__title">
+											10 отчетов
+										</div>
+
+										<div class="tariff__text">
+											<p>
+												Возможно согласование скидки при большом количестве запросов в ручном режиме.
+											</p>
+										</div>
+
+										<ul class="tariff__list">
+											<li class="tariff__item">
+												<span class="tariff__key">Срок хранения</span>
+												<span class="tariff__value">Вечно</span>
+											</li>
+											<li class="tariff__item">
+												<span class="tariff__key">Характеристика</span>
+												<span class="tariff__value">Значение характеристики</span>
+											</li>
+											<li class="tariff__item">
+												<span class="tariff__key">Характеристика</span>
+												<span class="tariff__value">Значение характеристики</span>
+											</li>
+										</ul>
+										<div class="tariff__price">
+											<div class="tariff__price-value">
+												<span class="tariff__price-number">1.200</span>
+												<span class="tariff__price-sign">&#8381;</span>
+											</div>
+
+											<div class="tariff__price-text">
+												<span>за 10 отчетов</span>
+											</div>
+										</div>
+
+										<a href="#" class="tariff__link button-primary button-primary--size-m ">
+											<span>
+												Купить 10 отчетов за 1.200₽
+											</span>
+											<i>
+												<svg class="icon">
+													<use xlink:href="./images/sprite.svg#loader"></use>
+												</svg>
+											</i>
+										</a>
+
+										<div class="tariff__remark">
+											<span>
+												Выгодно
+											</span>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li class="advantages__item">
+								<div class="tariff tariff--for-bisness">
+									<div class="tariff__body">
+										<div class="tariff__icon">
+											<svg class="icon icon-tariff-three">
+												<use xlink:href="./images/sprite.svg#tariff-three"></use>
+											</svg>
+										</div>
+
+										<div class="h2 tariff__title">
+											Для бизнеса
+										</div>
+
+
+										<div class="tariff__text">
+											<p>
+												Возможно согласование скидки при большом количестве запросов в ручном режиме.
+											</p>
+										</div>
+
+										<ul class="tariff__list">
+											<li class="tariff__item">
+												<span class="tariff__key">Срок хранения</span>
+												<span class="tariff__value">Вечно</span>
+											</li>
+											<li class="tariff__item">
+												<span class="tariff__key">Характеристика</span>
+												<span class="tariff__value">Значение характеристики</span>
+											</li>
+											<li class="tariff__item">
+												<span class="tariff__key">Характеристика</span>
+												<span class="tariff__value">Значение характеристики</span>
+											</li>
+										</ul>
+
+										<div class="tariff__price">
+											<div class="tariff__price-value">
+												<span class="tariff__price-number">150</span>
+												<span class="tariff__price-sign">&#8381;</span>
+											</div>
+
+											<div class="tariff__price-text">
+												<span>за отчет</span>
+											</div>
+										</div>
+
+										<a href="#" class="tariff__link button-primary button-primary--size-m ">
+											<span>
+												Оставить заявку
+											</span>
+											<i>
+												<svg class="icon">
+													<use xlink:href="./images/sprite.svg#loader"></use>
+												</svg>
+											</i>
+										</a>
+
+										<div class="tariff__remark">
+											<span>
+												Выгодно
+											</span>
+										</div>
+									</div>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</section>
+
+			<section class="section news">
+				<div class="news__site-container">
+					<div class="news__body section__body">
+						<div class="news__header">
+							<div class="news__title h1">
+								Последние новости
+							</div>
+							<div class="news__subtitle">
+								<p>
+									Узнавайте последние новости из нашего телеграмм-канала
+								</p>
+							</div>
+
+							<a href="#" class="news__socials-link button-ghost button-ghost--size-m button-ghost--orange">
+								<span class="button-ghost__span-icon">
+									<svg class="icon">
+										<use xlink:href="./images/sprite.svg#telegram"></use>
+									</svg>
+								</span>
+								<span>
+									checking-carriers
+								</span>
+							</a>
+
+							<a href="./news.html" class="news__link button-ghost button-ghost--size-l button-ghost--orange">
+								<span class>
+									Больше новостей
+								</span>
+
+								<span class="button-ghost__span-icon">
+									<svg class="icon">
+										<use xlink:href="./images/sprite.svg#arrow-r"></use>
+									</svg>
+								</span>
+
+							</a>
+
+						</div>
+
+						<div class="news__list">
+							<a href="#" class="news__item news__item--big">
+								<div class="news__image">
+									<div class="news__pic-wrapper">
+										<img src="./images/news/image-1.jpg" alt="новости checking-carriers">
+									</div>
+								</div>
+
+								<div class="news__desc">
+									<span class="news__name">
+										Название новости
+									</span>
+
+									<span class="news__text">
+										Небольшое описание новости в несколько строк чтобы раскрыть заголовок
+									</span>
+
+									<span class="news__date">
+										1 февраля 2023
+									</span>
+								</div>
+							</a>
+
+							<a href="#" class="news__item news__item--small">
+								<div class="news__image">
+									<div class="news__pic-wrapper">
+										<img src="./images/news/image-2.jpg" alt="новости checking-carriers">
+									</div>
+								</div>
+
+								<div class="news__desc">
+									<span class="news__name">
+										Название новости
+									</span>
+
+									<span class="news__text">
+										Небольшое описание новости в несколько строк чтобы раскрыть заголовок
+									</span>
+
+									<span class="news__date">
+										1 февраля 2023
+									</span>
+								</div>
+							</a>
+
+							<a href="#" class="news__item news__item--small">
+								<div class="news__image">
+									<div class="news__pic-wrapper">
+										<img src="./images/news/image-3.jpg" alt="новости checking-carriers">
+									</div>
+								</div>
+
+								<div class="news__desc">
+									<span class="news__name">
+										Название новости
+									</span>
+
+									<span class="news__text">
+										Небольшое описание новости в несколько строк чтобы раскрыть заголовок
+									</span>
+
+									<span class="news__date">
+										1 февраля 2023
+									</span>
+								</div>
+							</a>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="section feedback">
+				<div class="feedback__site-container">
+					<div class="feedback__body section__body">
+						<div class="tariffs__body h1 advantages__title">
+							Как с нами связаться
+						</div>
+
+						<div class="section__grid section__grid--stretch">
+							<div class="section__column section__column--big">
+								<div class="visit-card">
+									<div class="visit-card__body">
+										<a href="/" class="visit-card__logo logo logo--big">
+											<svg class="icon">
+												<use xlink:href="./images/sprite.svg#logo"></use>
+											</svg>
+										</a>
+
+										<ul class="visit-card__list">
+											<li class="visit-card__item">
+												<span class="visit-card__key">Название организации</span>
+												<span class="visit-card__value">ИП Кетов Е. И.</span>
+											</li>
+											<li class="visit-card__item">
+												<span class="visit-card__key">Номер телефона</span>
+												<a href="tel:+7(953)-603-79-76" class="visit-card__link contact contact--big">
+													<span class="contact__icon">
+														<svg class="icon">
+															<use xlink:href="./images/sprite.svg#phone"></use>
+														</svg>
+													</span>
+													<span class="contact__text">+7(953)-603-79-76</span>
+												</a>
+											</li>
+											<li class="visit-card__item">
+												<span class="visit-card__key">Электронная почта</span>
+												<a href="mailto: support@checking-carriers.ru" class="visit-card__link contact contact--big">
+													<span class="contact__icon">
+														<svg class="icon">
+															<use xlink:href="./images/sprite.svg#envelop"></use>
+														</svg>
+													</span>
+													<span class="contact__text">support@checking-carriers.ru</span>
+												</a>
+											</li>
+											<li class="visit-card__item">
+												<span class="visit-card__key">Телеграм канал</span>
+												<a href="#" class="visit-card__link contact contact--big">
+													<span class="contact__icon">
+														<svg class="icon">
+															<use xlink:href="./images/sprite.svg#telegram"></use>
+														</svg>
+													</span>
+													<span class="contact__text">checking-carriers</span>
+												</a>
+											</li>
+										</ul>
+									</div>
+									<div class="visit-card__image">
+										<svg class="icon">
+											<use xlink:href="./images/sprite.svg#visit-card-pic"></use>
+										</svg>
+									</div>
+								</div>
+							</div>
+
+							<div class="section__column section__column--small">
+								<form action="#" class="form js-form" novalidate>
+									<div class="form__body">
+										<div class="form__head">
+											<span class="form__title">Консультация</span>
+											<span class="form__text">
+												Оставьте заявку и наши специалисты<br> свяжутся с вами в течение 5 минут
+											</span>
+										</div>
+
+										<div class="form__inputs">
+											<div class="form__input-wrapper">
+												<input type="text" class="form__input input js-input-mask_text" placeholder="Ваше имя" required>
+												<div class="error">
+													<div class="error__icon">
+														<svg class="icon">
+															<use xlink:href="./images/sprite.svg#error"></use>
+														</svg>
+
+														<div class="error__text">
+															<span class="error__span">
+																Заполните поле
+															</span>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="form__input-wrapper">
+												<input type="text" class="form__input input js-input-mask_phone" placeholder="+7 (987) 654 32 10" required>
+												<div class="error">
+													<div class="error__icon">
+														<svg class="icon">
+															<use xlink:href="./images/sprite.svg#error"></use>
+														</svg>
+
+														<div class="error__text">
+															<span class="error__span">
+																Заполните поле
+															</span>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="form__input-wrapper form__input-wrapper--textarea">
+												<textarea type="text" class="form__input input textarea" placeholder="Комментарий" ></textarea>
+											</div>
+										</div>
+
+										<div class="form__submit">
+											<button class="form__button button-primary button-primary--size-m" type="submit">
+												<span>
+													Оставить заявку
+												</span>
+												<i>
+													<svg class="icon">
+														<use xlink:href="./images/sprite.svg#loader"></use>
+													</svg>
+												</i>
+											</button>
+
+											<div class="form__agreement">
+												Нажимания на кнопку «оставить заявку» вы подтверждаете своё согласие с <a>политикой конфиденциальности данных</a>
+											</div>
+										</div>
+									</div>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+
+		<footer class="footer">
+			<div class="footer__main">
+				<div class="footer__site-container">
+					<a href="/" class="footer__logo logo logo--big">
+						<svg class="icon">
+							<use xlink:href="./images/sprite.svg#logo"></use>
+						</svg>
+					</a>
+
+					<ul class="footer__menus">
+						<li class="footer__menu footer-menu">
+							<div class="h4 footer-menu__title">
+								Компания
+							</div>
+
+							<ul class="footer-menu__list">
+								<li class="footer-menu__item">
+									<a href="" class="footer-menu__link link">
+										<span>
+											О сервисе
+										</span>
+										<i>
+											<svg class="icon">
+												<use xlink:href="./images/sprite.svg#loader-grey"></use>
+											</svg>
+										</i>
+									</a>
+								</li>
+								<li class="footer-menu__item">
+									<a href="" class="footer-menu__link link">
+										<span>
+											Пример отчета
+										</span>
+										<i>
+											<svg class="icon">
+												<use xlink:href="./images/sprite.svg#loader-grey"></use>
+											</svg>
+										</i>
+									</a>
+								</li>
+								<li class="footer-menu__item">
+									<a href="" class="footer-menu__link link">
+										<span>
+											Блог
+										</span>
+										<i>
+											<svg class="icon">
+												<use xlink:href="./images/sprite.svg#loader-grey"></use>
+											</svg>
+										</i>
+									</a>
+								</li>
+								<li class="footer-menu__item">
+									<a href="" class="footer-menu__link link">
+										<span>
+											Контакты
+										</span>
+										<i>
+											<svg class="icon">
+												<use xlink:href="./images/sprite.svg#loader-grey"></use>
+											</svg>
+										</i>
+									</a>
+								</li>
+								<li class="footer-menu__item">
+									<a href="" class="footer-menu__link link">
+										<span>
+											Тарифы и цены
+										</span>
+										<i>
+											<svg class="icon">
+												<use xlink:href="./images/sprite.svg#loader-grey"></use>
+											</svg>
+										</i>
+									</a>
+								</li>
+							</ul>
+						</li>
+
+						<li class="footer__menu footer-menu">
+							<div class="h4 footer-menu__title">
+								Что проверяем
+							</div>
+
+							<ul class="footer-menu__list">
+								<li class="footer-menu__item">
+									<a href="" class="footer-menu__link link">
+										<span>
+											Водитель
+										</span>
+										<i>
+											<svg class="icon">
+												<use xlink:href="./images/sprite.svg#loader-grey"></use>
+											</svg>
+										</i>
+									</a>
+								</li>
+								<li class="footer-menu__item">
+									<a href="" class="footer-menu__link link">
+										<span>
+											Автомобиль
+										</span>
+										<i>
+											<svg class="icon">
+												<use xlink:href="./images/sprite.svg#loader-grey"></use>
+											</svg>
+										</i>
+									</a>
+								</li>
+								<li class="footer-menu__item">
+									<a href="" class="footer-menu__link link">
+										<span>
+											Штрафы
+										</span>
+										<i>
+											<svg class="icon">
+												<use xlink:href="./images/sprite.svg#loader-grey"></use>
+											</svg>
+										</i>
+									</a>
+								</li>
+								<li class="footer-menu__item">
+									<a href="" class="footer-menu__link link">
+										<span>
+											Задолженность
+										</span>
+										<i>
+											<svg class="icon">
+												<use xlink:href="./images/sprite.svg#loader-grey"></use>
+											</svg>
+										</i>
+									</a>
+								</li>
+								<li class="footer-menu__item">
+									<a href="" class="footer-menu__link link">
+										<span>
+											Транспортная компания
+										</span>
+										<i>
+											<svg class="icon">
+												<use xlink:href="./images/sprite.svg#loader-grey"></use>
+											</svg>
+										</i>
+									</a>
+								</li>
+							</ul>
+						</li>
+
+						<li class="footer__menu footer-menu">
+							<div class="h4 footer-menu__title">
+								Как проверяем
+							</div>
+
+							<ul class="footer-menu__list">
+								<li class="footer-menu__item">
+									<a href="" class="footer-menu__link link">
+										<span>
+											По ИНН
+										</span>
+										<i>
+											<svg class="icon">
+												<use xlink:href="./images/sprite.svg#loader-grey"></use>
+											</svg>
+										</i>
+									</a>
+								</li>
+								<li class="footer-menu__item">
+									<a href="" class="footer-menu__link link">
+										<span>
+											По VIN
+										</span>
+										<i>
+											<svg class="icon">
+												<use xlink:href="./images/sprite.svg#loader-grey"></use>
+											</svg>
+										</i>
+									</a>
+								</li>
+								<li class="footer-menu__item">
+									<a href="" class="footer-menu__link link">
+										<span>
+											По СТС
+										</span>
+										<i>
+											<svg class="icon">
+												<use xlink:href="./images/sprite.svg#loader-grey"></use>
+											</svg>
+										</i>
+									</a>
+								</li>
+								<li class="footer-menu__item">
+									<a href="" class="footer-menu__link link">
+										<span>
+											По В/У
+										</span>
+										<i>
+											<svg class="icon">
+												<use xlink:href="./images/sprite.svg#loader-grey"></use>
+											</svg>
+										</i>
+									</a>
+								</li>
+								<li class="footer-menu__item">
+									<a href="" class="footer-menu__link link">
+										<span>
+											По гос. номеру
+										</span>
+										<i>
+											<svg class="icon">
+												<use xlink:href="./images/sprite.svg#loader-grey"></use>
+											</svg>
+										</i>
+									</a>
+								</li>
+								<li class="footer-menu__item">
+									<a href="" class="footer-menu__link link">
+										<span>
+											По паспорту РФ
+										</span>
+										<i>
+											<svg class="icon">
+												<use xlink:href="./images/sprite.svg#loader-grey"></use>
+											</svg>
+										</i>
+									</a>
+								</li>
+							</ul>
+						</li>
+
+						<li class="footer__menu footer-menu">
+							<div class="h4 footer-menu__title">
+								Для бизнеса
+							</div>
+
+							<ul class="footer-menu__list">
+								<li class="footer-menu__item">
+									<a href="" class="footer-menu__link link">
+										<span>
+											Готовые решения
+										</span>
+										<i>
+											<svg class="icon">
+												<use xlink:href="./images/sprite.svg#loader-grey"></use>
+											</svg>
+										</i>
+									</a>
+								</li>
+								<li class="footer-menu__item">
+									<a href="" class="footer-menu__link link">
+										<span>
+											Сотрудничество
+										</span>
+										<i>
+											<svg class="icon">
+												<use xlink:href="./images/sprite.svg#loader-grey"></use>
+											</svg>
+										</i>
+									</a>
+								</li>
+								<li class="footer-menu__item">
+									<a href="" class="footer-menu__link link">
+										<span>
+											Возможности
+										</span>
+										<i>
+											<svg class="icon">
+												<use xlink:href="./images/sprite.svg#loader-grey"></use>
+											</svg>
+										</i>
+									</a>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="footer__basement">
+				<div class="footer__site-container">
+					<div class="footer__info">
+						<div class="copyright link">
+							© 2022 Checking Carriers
+						</div>
+
+						<div class="owner link">
+							ИП Кетов Е. И.
+						</div>
+
+						<a href="/" class="privacy link">
+							Политика конфидециальности
+						</a>
+					</div>
+					<div class="footer__contacts">
+						<div class="contacts">
+							<div class="contacts">
+								<ul class="contacts__list">
+									<li class="contacts__item">
+										<a href="mailto: support@checking-carriers.ru" class="contacts__link contact">
+											<span class="contact__icon">
+												<svg class="icon">
+													<use xlink:href="./images/sprite.svg#envelop"></use>
+												</svg>
+											</span>
+											<span class="contact__text">support@checking-carriers.ru</span>
+										</a>
+									</li>
+									<li class="contacts__item">
+										<a href="tel:+7(953)-603-79-76" class="contacts__link contact">
+											<span class="contact__icon">
+												<svg class="icon">
+													<use xlink:href="./images/sprite.svg#phone"></use>
+												</svg>
+											</span>
+											<span class="contact__text">+7(953)-603-79-76</span>
+										</a>
+									</li>
+									<li class="contacts__item">
+										<a href="#" class="contacts__link contact">
+											<span class="contact__icon">
+												<svg class="icon">
+													<use xlink:href="./images/sprite.svg#telegram"></use>
+												</svg>
+											</span>
+											<span class="contact__text">checking-carriers</span>
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+
+	<dialog class="dialog">
+		<div class="dialog__body">
+			<div class="dialog__content">
+				<div class="dialog__row">
+					<div class="contacts">
+						<ul class="contacts__list contacts__list--wrap">
+							<li class="contacts__item">
+								<a href="mailto: support@checking-carriers.ru" class="contacts__link contact">
+									<span class="contact__icon">
+										<svg class="icon">
+											<use xlink:href="./images/sprite.svg#envelop"></use>
+										</svg>
+									</span>
+									<span class="contact__text">support@checking-carriers.ru</span>
+								</a>
+							</li>
+							<li class="contacts__item">
+								<a href="tel:+7(953)-603-79-76" class="contacts__link contact">
+									<span class="contact__icon">
+										<svg class="icon">
+											<use xlink:href="./images/sprite.svg#phone"></use>
+										</svg>
+									</span>
+									<span class="contact__text">+7(953)-603-79-76</span>
+								</a>
+							</li>
+							<li class="contacts__item">
+								<a href="#" class="contacts__link contact">
+									<span class="contact__icon">
+										<svg class="icon">
+											<use xlink:href="./images/sprite.svg#telegram"></use>
+										</svg>
+									</span>
+									<span class="contact__text">checking-carriers</span>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="dialog__row">
+					<nav class="menu">
+						<ul class="menu__list menu__list--wrap">
+							<li class="menu__item">
+								<a href="./about.html" class="menu__link link">
+									О сервисе
+								</a>
+							</li>
+							<li class="menu__item">
+								<a href="./report-example.html" class="menu__link link">
+									Пример отчета
+								</a>
+							</li>
+							<li class="menu__item">
+								<a href="./blog.ru" class="menu__link link">
+									Блог
+								</a>
+							</li>
+							<li class="menu__item">
+								<a href="./contacts.html" class="menu__link link">
+									Контакты
+								</a>
+							</li>
+						</ul>
+					</nav>
+				</div>
+
+				<div class="dialog__row dialog__search">
+					<form class="search">
+						<span class="search__icon">
+							<svg class="icon">
+								<use xlink:href="./images/sprite.svg#search"></use>
+							</svg>
+						</span>
+						<input type="text" class="search__input input" placeholder="Поиск по сайту" required>
+						<button type="reset" class="search__clear">
+							<svg class="icon">
+								<use xlink:href="./images/sprite.svg#input-close"></use>
+							</svg>
+						</button>
+					</form>
+				</div>
+			</div>
+		</div>
+	</dialog>
+</body>
+</html>

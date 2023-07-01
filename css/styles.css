@@ -1,0 +1,213 @@
+/* RESET, NORMALIZE STYLES: */
+@import url('./normalize.css');
+@import url('./reset.css');
+
+/* FONTS LOAD SECTION: */
+/* @import url('./fonts.css'); */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,400&display=swap');
+
+/* LAYOUTS STYLES: */
+@import url('./layout/wrapper.css');
+@import url('./layout/header.css');
+@import url('./layout/main.css');
+@import url('./layout/footer.css');
+@import url('./layout/site-container.css');
+@import url('./layout/section.css');
+@import url('./layout/dialog.css');
+@import url('./layout/popup.css');
+
+/* BEM BLOCKS: */
+@import url('./bem/menu.css');
+@import url('./bem/contacts.css');
+@import url('./bem/control-panel.css');
+@import url('./bem/controls.css');
+@import url('./bem/search.css');
+@import url('./bem/result.css');
+@import url('./bem/check-menu.css');
+@import url('./bem/footer-menu.css');
+@import url('./bem/breadcrumbs.css');
+/* intro */
+@import url('./bem/intro.css');
+@import url('./bem/verifications.css');
+@import url('./bem/verification.css');
+@import url('./bem/feature.css');
+/* advantages */
+@import url('./bem/advantages.css');
+@import url('./bem/advantage.css');
+@import url('./bem/quality-advantage.css');
+@import url('./bem/our-advantage.css');
+/* our-work */
+@import url('./bem/report.css');
+@import url('./bem/floating-link.css');
+/* gallery */
+@import url('./bem/gallery.css');
+/* tariffs */
+@import url('./bem/tariff.css');
+/* news */
+@import url('./bem/news.css');
+/* feedback */
+@import url('./bem/feedback.css');
+@import url('./bem/visit-card.css');
+@import url('./bem/form.css');
+@import url('./bem/error.css');
+/* about */
+@import url('./bem/about.css');
+@import url('./bem/nav-about.css');
+@import url('./bem/about-intro.css');
+@import url('./bem/member.css');
+@import url('./bem/crew.css');
+@import url('./bem/history.css');
+@import url('./bem/storyline-slide.css');
+/* report-example */
+@import url('./bem/example.css');
+@import url('./bem/report-example.css');
+@import url('./bem/brief-description.css');
+@import url('./bem/report-item.css');
+@import url('./bem/information-item.css');
+/* exam */
+@import url('./bem/notification.css');
+/* news item page */
+@import url('./bem/news-item-section.css');
+@import url('./bem/news-item-slider.css');
+/* sample-page */
+@import url('./bem/sample-page.css');
+/* search-result */
+@import url('./bem/search-result.css');
+
+/* UI STYLES: */
+@import url('./ui/visually-hidden.css');
+@import url('./ui/text.css');
+@import url('./ui/logo.css');
+@import url('./ui/hamburger.css');
+@import url('./ui/button-primary.css');
+@import url('./ui/button-secondary.css');
+@import url('./ui/button-ghost.css');
+@import url('./ui/link.css');
+@import url('./ui/check-link.css');
+@import url('./ui/input.css');
+@import url('./ui/textarea.css');
+@import url('./ui/contact.css');
+@import url('./ui/control-link.css');
+@import url('./ui/seo-link.css');
+
+/* COMMONS STULES */
+@import url('./commons.css');
+
+/* USER VARIABLES SECTION: */
+:root {
+	/* colors */
+	--color-white: #ffffff;
+
+	--color-black-100: #0b1f44;
+	--color-black-80: #3c4c69;
+	--color-black-60: #6d798f;
+	--color-black-40: #9da5b4;
+	--color-black-20: #ced2da;
+	--color-black-10: #e7e9ec;
+
+	--color-red-100: #eb5757;
+	--color-blue-100: #6fcf97;
+
+	--color-orange-100: #ff731e;
+	--color-orange-80: #ff8f4b;
+	--color-orange-60: #ffab78;
+	--color-orange-40: #ffc7A5;
+	--color-orange-20: #ffe3d2;
+	--color-orange-10: #fff1E8;
+	--color-orange-5: #fffbf4;
+
+	--color-beige-100: #fff7ea;
+
+	--color-blue-100: #2065ea;
+	--color-blue-80: #4d84ee;
+	--color-blue-60: #79a3f2;
+	--color-blue-40: #a6c1f7;
+	--color-blue-20: #d2e0fb;
+	--color-blue-10: #e9f0fd;
+	--color-blue-hover: #3273ee;
+	--color-blue-active: #0756ee;
+
+	--color-grey-100: #f7f7f7;
+	--color-grey-50: #fbfbfb;
+	--color-grey-6: #f2f2f2;
+	--color-grey-5: #e0e0e0;
+	--color-grey-3: #828282;
+
+	--color-grey-border: #efefef;
+	--color-back: #f5f9ff;
+
+	--color-ex-title:  #0B1F44;
+	--color-ex-text:  rgba(106, 123, 158, 0.64);
+	--color-back-info: #fafcff;
+	--color-back-news: #fcfcfc;
+
+	--swiper-theme-color: #3c3f44 !important;
+
+	/* fonts */
+	--main-ff: 'Roboto', sans-serif;
+	--font-sz: 10px;
+	--lineheight: 1.2;
+
+	--font-type-40: 700 4.2rem/117% var(--main-ff);
+	--font-type-33: 700 3.2rem/117% var(--main-ff);
+	--font-type-30: 400 3rem/100% var(--main-ff);
+	--font-type-23: 700 2.4rem/117% var(--main-ff);
+	--font-type-19: 400 1.8rem/117% var(--main-ff);
+	--font-type-16: 400 1.6rem/119% var(--main-ff);
+	--font-type-15: 400 1.5rem/105% var(--main-ff);
+	--font-type-13: 400 1.4rem/114% var(--main-ff);
+	--font-type-11: 400 1.2rem/117% var(--main-ff);
+
+	--font-btn-l: 600 1.8rem/117% var(--main-ff);
+	--font-btn-m: 500 1.8rem/117% var(--main-ff);
+	--font-btn-s: 400 1.6rem/119% var(--main-ff);
+
+	/* other */
+	--transition: 0.2s ease-out;
+	--gap: 2rem;
+}
+
+html {
+	font-size: var(--font-sz);
+	line-height: var(--lineheight);
+}
+
+body {
+	min-width: 319px;
+	position: relative;
+	overflow-x: hidden;
+	color: var(--color-black-60);
+	font: var(--font-type-16);
+	text-rendering: optimizeSpeed;
+    scroll-behavior: smooth;
+}
+
+@media (max-width : 1280px) {
+	:root {
+		--font-sz: 8px;
+	}
+}
+
+@media (max-width : 768px) {
+	:root {
+		--font-type-40: 700 3.4rem/117% var(--main-ff);
+		--font-type-33: 700 2.4rem/117% var(--main-ff);
+		--font-type-23: 700 1.6rem/117% var(--main-ff);
+		--font-type-19: 400 1.6rem/117% var(--main-ff);
+		/* --font-type-16: 400 1.4rem/119% var(--main-ff); */
+		/* --font-type-13: 400 1.2rem/114% var(--main-ff);
+		--font-type-11: 400 1.2rem/117% var(--main-ff);
+
+		--font-btn-l: 600 1.6rem/117% var(--main-ff);
+		--font-btn-m: 500 1.4rem/117% var(--main-ff);
+		--font-btn-s: 400 1.2rem/119% var(--main-ff); */
+	}
+}
+
+@media (max-width : 576px) {
+	:root {
+		--font-sz: 7px;
+		--gap: 1.5rem;
+		--font-type-15: 400 1.2rem/105% var(--main-ff);
+	}
+}

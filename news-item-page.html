@@ -1,0 +1,1479 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+	<meta charset="utf-8">
+
+	<title>Страница новости</title>
+	<meta name="description" content="Simple Starter Description">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+	<link rel="icon" href="images/favicon.png">
+	<meta property="og:image" content="images/preview.jpg">
+
+	<link rel="stylesheet" href="css/styles.css">
+
+	<!-- swiper js -->
+	<link
+		rel="stylesheet"
+		href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+  	/>
+
+ 	<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+	<script src="js/common.js" defer></script>
+
+</head>
+
+<body class="preload page-main">
+	<header class="header">
+		<div class="header__site-container">
+			<div class="header__basement">
+				<div class="control-panel border-radius">
+					<a href="/" class="control-panel__logo logo">
+						<svg class="icon">
+							<use xlink:href="./images/sprite.svg#logo"></use>
+						</svg>
+					</a>
+
+					<form class="control-panel__search search">
+						<span class="search__icon">
+							<svg class="icon">
+								<use xlink:href="./images/sprite.svg#search"></use>
+							</svg>
+						</span>
+						<input type="text" class="search__input input js-search-input" placeholder="Поиск по сайту" required>
+						<button type="reset" class="search__clear">
+							<svg class="icon">
+								<use xlink:href="./images/sprite.svg#input-close"></use>
+							</svg>
+						</button>
+					</form>
+
+					<div class="control-panel__controls controls">
+						<ul class="controls__list">
+							<li class="controls__item">
+								<a href="#" class="controls__link control-link js-check-btn">
+									<span>
+										Проверка
+									</span>
+									<i>
+										<svg class="icon">
+											<use xlink:href="./images/sprite.svg#arrow-d"></use>
+										</svg>
+									</i>
+								</a>
+							</li>
+							<li class="controls__item">
+								<a href="#" class="controls__link link">
+									<span>
+										Для бизнеса
+									</span>
+								</a>
+							</li>
+							<li class="controls__item">
+								<a href="#" class="controls__link button-primary">
+									<span>
+										Выбрать тариф
+									</span>
+									<i>
+										<svg class="icon">
+											<use xlink:href="./images/sprite.svg#loader"></use>
+										</svg>
+									</i>
+								</a>
+							</li>
+						</ul>
+					</div>
+
+					<div class="control-panel__check-menu">
+						<div class="check-menu">
+							<div class="check-menu__menu">
+								<div class="h3 check-menu__title">
+									Что проверяем
+								</div>
+								<ul class="check-menu__list">
+									<li class="check-menu__item">
+										<a href="#" class="check-menu__link check-link">
+											<div class="check-link__icon-wrapper">
+												<span class="check-link__icon">
+													<svg class="icon">
+														<use xlink:href="./images/sprite.svg#report-one"></use>
+													</svg>
+												</span>
+											</div>
+											<span class="check-link__text">
+												Штрафы
+											</span>
+										</a>
+									</li>
+									<li class="check-menu__item">
+										<a href="#" class="check-menu__link check-link">
+											<div class="check-link__icon-wrapper">
+												<span class="check-link__icon">
+													<svg class="icon">
+														<use xlink:href="./images/sprite.svg#report-two"></use>
+													</svg>
+												</span>
+											</div>
+											<span class="check-link__text">
+												Водитель
+											</span>
+										</a>
+									</li>
+									<li class="check-menu__item">
+										<a href="#" class="check-menu__link check-link">
+											<div class="check-link__icon-wrapper">
+												<span class="check-link__icon">
+													<svg class="icon">
+														<use xlink:href="./images/sprite.svg#report-three"></use>
+													</svg>
+												</span>
+											</div>
+											<span class="check-link__text">
+												Задолженность
+											</span>
+										</a>
+									</li>
+									<li class="check-menu__item">
+										<a href="#" class="check-menu__link check-link">
+											<div class="check-link__icon-wrapper">
+												<span class="check-link__icon">
+													<svg class="icon">
+														<use xlink:href="./images/sprite.svg#report-four"></use>
+													</svg>
+												</span>
+											</div>
+											<span class="check-link__text">
+												Транспортная компания
+											</span>
+										</a>
+									</li>
+									<li class="check-menu__item">
+										<a href="#" class="check-menu__link check-link">
+											<div class="check-link__icon-wrapper">
+												<span class="check-link__icon">
+													<svg class="icon">
+														<use xlink:href="./images/sprite.svg#report-five"></use>
+													</svg>
+												</span>
+											</div>
+											<span class="check-link__text">
+												Автомобиль
+											</span>
+										</a>
+									</li>
+								</ul>
+							</div>
+							<div class="check-menu__menu">
+								<div class="h3 check-menu__title">
+									Как проверяем
+								</div>
+								<ul class="check-menu__list">
+									<li class="check-menu__item">
+										<a href="#" class="check-menu__link check-link">
+											<span class="check-link__text">
+												По ИНН
+											</span>
+										</a>
+									</li>
+									<li class="check-menu__item">
+										<a href="#" class="check-menu__link check-link">
+											<span class="check-link__text">
+												По VIN
+											</span>
+										</a>
+									</li>
+									<li class="check-menu__item">
+										<a href="#" class="check-menu__link check-link">
+											<span class="check-link__text">
+												По СТС
+											</span>
+										</a>
+									</li>
+									<li class="check-menu__item">
+										<a href="#" class="check-menu__link check-link">
+											<span class="check-link__text">
+												По В/У
+											</span>
+										</a>
+									</li>
+									<li class="check-menu__item">
+										<a href="#" class="check-menu__link check-link">
+											<span class="check-link__text">
+												По гос. номеру
+											</span>
+										</a>
+									</li>
+									<li class="check-menu__item">
+										<a href="#" class="check-menu__link check-link">
+											<span class="check-link__text">
+												По паспорту РФ
+											</span>
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+
+					<div class="control-panel__search-result">
+						<div class="result result-is-finded">
+							<div class="result__body">
+								<div class="h2 result__heading">
+									<span>Результаты поиска</span>
+									<span>(</span><span class="result__value">6</span><span>)</span>
+								</div>
+
+								<div class="result__list-wrapper">
+									<ul class="result__list">
+										<li class="result__item">
+											<a href="#" class="result__link">
+												<div class="result__variant">
+													<span class="result__finded">
+														Проверка автомобиля на
+													</span>
+													<span class="result__inputed">
+														штрафы
+													</span>
+												</div>
+												<div class="result__type">
+													<span class="result__type-value">
+														Услуга
+													</span>
+												</div>
+											</a>
+										</li>
+									</ul>
+
+									<div class="result__add">
+										<button class="news__load-btn">
+											<span>Посмотреть все результаты</span>
+											<span class="news__load-btn-icon">
+												<svg class="icon">
+													<use xlink:href="./images/sprite.svg#load-arrow"></use>
+												</svg>
+											</span>
+										</button>
+									</div>
+								</div>
+
+								<div class="result__plug">
+									Извините, но ничего не найдено.<br>
+									Попробуйте изменить запрос или <a href="#" class="seo-link">свяжитесь с нами</a>
+								</div>
+							</div>
+						</div>
+						<!-- <div class="result result-not-finded">
+							<div class="result__body">
+								<div class="h2 result__heading">
+									<span>Результаты поиска</span>
+									<span>(</span><span class="result__value">6</span><span>)</span>
+								</div>
+
+								<div class="result__list-wrapper">
+									<ul class="result__list">
+										<li class="result__item">
+											<a href="#" class="result__link">
+												<div class="result__variant">
+													<span class="result__finded">
+														Проверка автомобиля на
+													</span>
+													<span class="result__inputed">
+														штрафы
+													</span>
+												</div>
+												<div class="result__type">
+													<span class="result__type-value">
+														Услуга
+													</span>
+												</div>
+											</a>
+										</li>
+									</ul>
+
+									<div class="result__add">
+										<button class="news__load-btn">
+											<span>Посмотреть все результаты</span>
+											<span class="news__load-btn-icon">
+												<svg class="icon">
+													<use xlink:href="./images/sprite.svg#load-arrow"></use>
+												</svg>
+											</span>
+										</button>
+									</div>
+								</div>
+
+								<div class="result__plug">
+									Извините, но ничего не найдено.<br>
+									Попробуйте изменить запрос или <a href="#" class="seo-link">свяжитесь с нами</a>
+								</div>
+							</div>
+						</div> -->
+					</div>
+				</div>
+			</div>
+
+			<div class="header__above">
+				<a href="/" class="header__logo logo">
+					<svg class="icon">
+						<use xlink:href="./images/sprite.svg#logo"></use>
+					</svg>
+				</a>
+
+				<div class="header__menu menu">
+					<nav class="menu">
+						<ul class="menu__list">
+							<li class="menu__item">
+								<a href="./about.html" class="menu__link link">
+									О сервисе
+								</a>
+							</li>
+							<li class="menu__item">
+								<a href="./report-example.html" class="menu__link link">
+									Пример отчета
+								</a>
+							</li>
+							<li class="menu__item">
+								<a href="./blog.ru" class="menu__link link">
+									Блог
+								</a>
+							</li>
+							<li class="menu__item">
+								<a href="./contacts.html" class="menu__link link">
+									Контакты
+								</a>
+							</li>
+						</ul>
+					</nav>
+				</div>
+
+				<div class="header__contacts">
+					<div class="contacts">
+						<ul class="contacts__list">
+							<li class="contacts__item">
+								<a href="mailto: support@checking-carriers.ru" class="contacts__link contact">
+									<span class="contact__icon">
+										<svg class="icon">
+											<use xlink:href="./images/sprite.svg#envelop"></use>
+										</svg>
+									</span>
+									<span class="contact__text">support@checking-carriers.ru</span>
+								</a>
+							</li>
+							<li class="contacts__item">
+								<a href="tel:+7(953)-603-79-76" class="contacts__link contact">
+									<span class="contact__icon">
+										<svg class="icon">
+											<use xlink:href="./images/sprite.svg#phone"></use>
+										</svg>
+									</span>
+									<span class="contact__text">+7(953)-603-79-76</span>
+								</a>
+							</li>
+							<li class="contacts__item">
+								<a href="#" class="contacts__link contact">
+									<span class="contact__icon">
+										<svg class="icon">
+											<use xlink:href="./images/sprite.svg#telegram"></use>
+										</svg>
+									</span>
+									<span class="contact__text">checking-carriers</span>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="header__hamburger">
+					<button class="hamburger hamburger--spring js-hamburger-btn" type="button">
+						<span class="hamburger-box">
+						  <span class="hamburger-inner"></span>
+						</span>
+					</button>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<div class="wrapper">
+		<main class="main">
+            <section class="section news-item-section">
+                <div class="news-item-section__site-container">
+                    <div class="news-item-section__content">
+                        <div class="news-item-section__main-slider news-item-slider swiper js-news-item-slider">
+                            <ul class="news-item-slider__list-wrapper swiper-wrapper">
+                                <li class="news-item-slider__slide swiper-slide">
+                                    <div class="news-item-slider__breadcrumbs breadcrumbs">
+                                        <ul class="breadcrumbs__list">
+                                            <li class="breadcrumbs__item">
+                                                <a href="/" class="breadcrumbs__link">
+                                                    Главная
+                                                </a>
+                                            </li>
+                                            <li class="breadcrumbs__item">
+                                                <a href="/" class="breadcrumbs__link">
+                                                    Новости
+                                                </a>
+                                            </li>
+                                            <li class="breadcrumbs__item">
+                                                <a href="/" class="breadcrumbs__link">
+                                                    Название новости
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="news-item-slider__image">
+                                        <div class="gallery__image-wrapper gallery__image-wrapper--news">
+                                            <img src="./images/placeholder.jpg" alt="">
+                                        </div>
+                                    </div>
+
+                                    <div class="news-item-slider__info">
+                                        <div class="news-item-slider__heading news__header">
+                                            <div class="news-item-slider__date">1 февраля 2023</div>
+                                            <div class="news-item-slider__title">Название новости</div>
+
+                                            <a href="#" class="news__link button-ghost button-ghost--size-m button-ghost--orange js-share">
+                                                <span class="button-ghost__span-icon">
+                                                    <svg class="icon">
+                                                        <use xlink:href="./images/sprite.svg#share"></use>
+                                                    </svg>
+                                                </span>
+                                                <span>
+                                                    Поделиться
+                                                </span>
+                                            </a>
+                                        </div>
+                                    </div>
+
+                                    <div class="news-item-slider__texts">
+                                        <div class="news-item-slider__text">
+                                            <p>
+                                                Апостериори, предмет деятельности переворачивает экспериментальный онтологический статус искусства. Сомнение конструктивно. Природа эстетического, как принято считать, принимает во внимание данный бабувизм, оптимизируя бюджеты.
+                                            </p>
+
+                                            <p>
+                                                Дискретность, следовательно, имеет цвет. Созерцание, вопреки мнению П.Друкера, контролирует дедуктивный метод. Ощущение мира, в рамках сегодняшних воззрений, недостижимо. Фарс подсознательно вызывает гедонизм.
+                                            </p>
+
+                                            <p>
+                                                Описание фотографии для СЕО-продвижения
+                                            </p>
+                                        </div>
+
+                                        <div class="news-item-slider__text">
+                                            <i>
+                                                Апостериори, предмет деятельности переворачивает экспериментальный онтологический статус искусства. Сомнение конструктивно. Природа эстетического, как принято считать, принимает во внимание данный бабувизм, оптимизируя бюджеты.
+                                            </i>
+                                        </div>
+
+                                        <div class="news-item-slider__text news-item-slider__text--decore">
+                                            <strong>
+                                                Апостериори, предмет деятельности переворачивает экспериментальный онтологический статус искусства. Сомнение конструктивно. Природа эстетического, как принято считать, принимает во внимание данный бабувизм, оптимизируя бюджеты.
+                                            </strong>
+                                        </div>
+
+                                        <div class="news-item-slider__text">
+                                            <i>
+                                                Апостериори, предмет деятельности переворачивает экспериментальный онтологический статус искусства. Сомнение конструктивно. Природа эстетического, как принято считать, принимает во внимание данный бабувизм, оптимизируя бюджеты.
+                                            </i>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="news-item-slider__slide swiper-slide">
+                                    <div class="news-item-slider__breadcrumbs breadcrumbs">
+                                        <ul class="breadcrumbs__list">
+                                            <li class="breadcrumbs__item">
+                                                <a href="/" class="breadcrumbs__link">
+                                                    Главная
+                                                </a>
+                                            </li>
+                                            <li class="breadcrumbs__item">
+                                                <a href="/" class="breadcrumbs__link">
+                                                    Новости
+                                                </a>
+                                            </li>
+                                            <li class="breadcrumbs__item">
+                                                <a href="/" class="breadcrumbs__link">
+                                                    Название новости
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="news-item-slider__image">
+                                        <div class="gallery__image-wrapper gallery__image-wrapper--news">
+                                            <img src="./images/placeholder.jpg" alt="">
+                                        </div>
+                                    </div>
+
+                                    <div class="news-item-slider__info">
+                                        <div class="news-item-slider__heading news__header">
+                                            <div class="news-item-slider__date">1 февраля 2023</div>
+                                            <div class="news-item-slider__title">Название новости</div>
+
+                                            <a href="#" class="news__link button-ghost button-ghost--size-m button-ghost--orange js-share">
+                                                <span class="button-ghost__span-icon">
+                                                    <svg class="icon">
+                                                        <use xlink:href="./images/sprite.svg#share"></use>
+                                                    </svg>
+                                                </span>
+                                                <span>
+                                                    Поделиться
+                                                </span>
+                                            </a>
+                                        </div>
+                                    </div>
+
+                                    <div class="news-item-slider__texts">
+                                        <div class="news-item-slider__text">
+                                            <p>
+                                                Апостериори, предмет деятельности переворачивает экспериментальный онтологический статус искусства. Сомнение конструктивно. Природа эстетического, как принято считать, принимает во внимание данный бабувизм, оптимизируя бюджеты.
+                                            </p>
+
+                                            <p>
+                                                Дискретность, следовательно, имеет цвет. Созерцание, вопреки мнению П.Друкера, контролирует дедуктивный метод. Ощущение мира, в рамках сегодняшних воззрений, недостижимо. Фарс подсознательно вызывает гедонизм.
+                                            </p>
+
+                                            <p>
+                                                Описание фотографии для СЕО-продвижения
+                                            </p>
+                                        </div>
+
+                                        <div class="news-item-slider__text">
+                                            <i>
+                                                Апостериори, предмет деятельности переворачивает экспериментальный онтологический статус искусства. Сомнение конструктивно. Природа эстетического, как принято считать, принимает во внимание данный бабувизм, оптимизируя бюджеты.
+                                            </i>
+                                        </div>
+
+                                        <div class="news-item-slider__text news-item-slider__text--decore">
+                                            <strong>
+                                                Апостериори, предмет деятельности переворачивает экспериментальный онтологический статус искусства. Сомнение конструктивно. Природа эстетического, как принято считать, принимает во внимание данный бабувизм, оптимизируя бюджеты.
+                                            </strong>
+                                        </div>
+
+                                        <div class="news-item-slider__text">
+                                            <i>
+                                                Апостериори, предмет деятельности переворачивает экспериментальный онтологический статус искусства. Сомнение конструктивно. Природа эстетического, как принято считать, принимает во внимание данный бабувизм, оптимизируя бюджеты.
+                                            </i>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="news-item-slider__slide swiper-slide">
+                                    <div class="news-item-slider__breadcrumbs breadcrumbs">
+                                        <ul class="breadcrumbs__list">
+                                            <li class="breadcrumbs__item">
+                                                <a href="/" class="breadcrumbs__link">
+                                                    Главная
+                                                </a>
+                                            </li>
+                                            <li class="breadcrumbs__item">
+                                                <a href="/" class="breadcrumbs__link">
+                                                    Новости
+                                                </a>
+                                            </li>
+                                            <li class="breadcrumbs__item">
+                                                <a href="/" class="breadcrumbs__link">
+                                                    Название новости
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="news-item-slider__image">
+                                        <div class="gallery__image-wrapper gallery__image-wrapper--news">
+                                            <img src="./images/placeholder.jpg" alt="">
+                                        </div>
+                                    </div>
+
+                                    <div class="news-item-slider__info">
+                                        <div class="news-item-slider__heading news__header">
+                                            <div class="news-item-slider__date">1 февраля 2023</div>
+                                            <div class="news-item-slider__title">Название новости</div>
+
+                                            <a href="#" class="news__link button-ghost button-ghost--size-m button-ghost--orange js-share">
+                                                <span class="button-ghost__span-icon">
+                                                    <svg class="icon">
+                                                        <use xlink:href="./images/sprite.svg#share"></use>
+                                                    </svg>
+                                                </span>
+                                                <span>
+                                                    Поделиться
+                                                </span>
+                                            </a>
+                                        </div>
+                                    </div>
+
+                                    <div class="news-item-slider__texts">
+                                        <div class="news-item-slider__text">
+                                            <p>
+                                                Апостериори, предмет деятельности переворачивает экспериментальный онтологический статус искусства. Сомнение конструктивно. Природа эстетического, как принято считать, принимает во внимание данный бабувизм, оптимизируя бюджеты.
+                                            </p>
+
+                                            <p>
+                                                Дискретность, следовательно, имеет цвет. Созерцание, вопреки мнению П.Друкера, контролирует дедуктивный метод. Ощущение мира, в рамках сегодняшних воззрений, недостижимо. Фарс подсознательно вызывает гедонизм.
+                                            </p>
+
+                                            <p>
+                                                Описание фотографии для СЕО-продвижения
+                                            </p>
+                                        </div>
+
+                                        <div class="news-item-slider__text">
+                                            <i>
+                                                Апостериори, предмет деятельности переворачивает экспериментальный онтологический статус искусства. Сомнение конструктивно. Природа эстетического, как принято считать, принимает во внимание данный бабувизм, оптимизируя бюджеты.
+                                            </i>
+                                        </div>
+
+                                        <div class="news-item-slider__text news-item-slider__text--decore">
+                                            <strong>
+                                                Апостериори, предмет деятельности переворачивает экспериментальный онтологический статус искусства. Сомнение конструктивно. Природа эстетического, как принято считать, принимает во внимание данный бабувизм, оптимизируя бюджеты.
+                                            </strong>
+                                        </div>
+
+                                        <div class="news-item-slider__text">
+                                            <i>
+                                                Апостериори, предмет деятельности переворачивает экспериментальный онтологический статус искусства. Сомнение конструктивно. Природа эстетического, как принято считать, принимает во внимание данный бабувизм, оптимизируя бюджеты.
+                                            </i>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="news-item-slider__slide swiper-slide">
+                                    <div class="news-item-slider__breadcrumbs breadcrumbs">
+                                        <ul class="breadcrumbs__list">
+                                            <li class="breadcrumbs__item">
+                                                <a href="/" class="breadcrumbs__link">
+                                                    Главная
+                                                </a>
+                                            </li>
+                                            <li class="breadcrumbs__item">
+                                                <a href="/" class="breadcrumbs__link">
+                                                    Новости
+                                                </a>
+                                            </li>
+                                            <li class="breadcrumbs__item">
+                                                <a href="/" class="breadcrumbs__link">
+                                                    Название новости
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="news-item-slider__image">
+                                        <div class="gallery__image-wrapper gallery__image-wrapper--news">
+                                            <img src="./images/placeholder.jpg" alt="">
+                                        </div>
+                                    </div>
+
+                                    <div class="news-item-slider__info">
+                                        <div class="news-item-slider__heading news__header">
+                                            <div class="news-item-slider__date">1 февраля 2023</div>
+                                            <div class="news-item-slider__title">Название новости</div>
+
+                                            <a href="#" class="news__link button-ghost button-ghost--size-m button-ghost--orange js-share">
+                                                <span class="button-ghost__span-icon">
+                                                    <svg class="icon">
+                                                        <use xlink:href="./images/sprite.svg#share"></use>
+                                                    </svg>
+                                                </span>
+                                                <span>
+                                                    Поделиться
+                                                </span>
+                                            </a>
+                                        </div>
+                                    </div>
+
+                                    <div class="news-item-slider__texts">
+                                        <div class="news-item-slider__text">
+                                            <p>
+                                                Апостериори, предмет деятельности переворачивает экспериментальный онтологический статус искусства. Сомнение конструктивно. Природа эстетического, как принято считать, принимает во внимание данный бабувизм, оптимизируя бюджеты.
+                                            </p>
+
+                                            <p>
+                                                Дискретность, следовательно, имеет цвет. Созерцание, вопреки мнению П.Друкера, контролирует дедуктивный метод. Ощущение мира, в рамках сегодняшних воззрений, недостижимо. Фарс подсознательно вызывает гедонизм.
+                                            </p>
+
+                                            <p>
+                                                Описание фотографии для СЕО-продвижения
+                                            </p>
+                                        </div>
+
+                                        <div class="news-item-slider__text">
+                                            <i>
+                                                Апостериори, предмет деятельности переворачивает экспериментальный онтологический статус искусства. Сомнение конструктивно. Природа эстетического, как принято считать, принимает во внимание данный бабувизм, оптимизируя бюджеты.
+                                            </i>
+                                        </div>
+
+                                        <div class="news-item-slider__text news-item-slider__text--decore">
+                                            <strong>
+                                                Апостериори, предмет деятельности переворачивает экспериментальный онтологический статус искусства. Сомнение конструктивно. Природа эстетического, как принято считать, принимает во внимание данный бабувизм, оптимизируя бюджеты.
+                                            </strong>
+                                        </div>
+
+                                        <div class="news-item-slider__text">
+                                            <i>
+                                                Апостериори, предмет деятельности переворачивает экспериментальный онтологический статус искусства. Сомнение конструктивно. Природа эстетического, как принято считать, принимает во внимание данный бабувизм, оптимизируя бюджеты.
+                                            </i>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="news-item-slider__slide swiper-slide">
+                                    <div class="news-item-slider__breadcrumbs breadcrumbs">
+                                        <ul class="breadcrumbs__list">
+                                            <li class="breadcrumbs__item">
+                                                <a href="/" class="breadcrumbs__link">
+                                                    Главная
+                                                </a>
+                                            </li>
+                                            <li class="breadcrumbs__item">
+                                                <a href="/" class="breadcrumbs__link">
+                                                    Новости
+                                                </a>
+                                            </li>
+                                            <li class="breadcrumbs__item">
+                                                <a href="/" class="breadcrumbs__link">
+                                                    Название новости
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="news-item-slider__image">
+                                        <div class="gallery__image-wrapper gallery__image-wrapper--news">
+                                            <img src="./images/placeholder.jpg" alt="">
+                                        </div>
+                                    </div>
+
+                                    <div class="news-item-slider__info">
+                                        <div class="news-item-slider__heading news__header">
+                                            <div class="news-item-slider__date">1 февраля 2023</div>
+                                            <div class="news-item-slider__title">Название новости</div>
+
+                                            <a href="#" class="news__link button-ghost button-ghost--size-m button-ghost--orange js-share">
+                                                <span class="button-ghost__span-icon">
+                                                    <svg class="icon">
+                                                        <use xlink:href="./images/sprite.svg#share"></use>
+                                                    </svg>
+                                                </span>
+                                                <span>
+                                                    Поделиться
+                                                </span>
+                                            </a>
+                                        </div>
+                                    </div>
+
+                                    <div class="news-item-slider__texts">
+                                        <div class="news-item-slider__text">
+                                            <p>
+                                                Апостериори, предмет деятельности переворачивает экспериментальный онтологический статус искусства. Сомнение конструктивно. Природа эстетического, как принято считать, принимает во внимание данный бабувизм, оптимизируя бюджеты.
+                                            </p>
+
+                                            <p>
+                                                Дискретность, следовательно, имеет цвет. Созерцание, вопреки мнению П.Друкера, контролирует дедуктивный метод. Ощущение мира, в рамках сегодняшних воззрений, недостижимо. Фарс подсознательно вызывает гедонизм.
+                                            </p>
+
+                                            <p>
+                                                Описание фотографии для СЕО-продвижения
+                                            </p>
+                                        </div>
+
+                                        <div class="news-item-slider__text">
+                                            <i>
+                                                Апостериори, предмет деятельности переворачивает экспериментальный онтологический статус искусства. Сомнение конструктивно. Природа эстетического, как принято считать, принимает во внимание данный бабувизм, оптимизируя бюджеты.
+                                            </i>
+                                        </div>
+
+                                        <div class="news-item-slider__text news-item-slider__text--decore">
+                                            <strong>
+                                                Апостериори, предмет деятельности переворачивает экспериментальный онтологический статус искусства. Сомнение конструктивно. Природа эстетического, как принято считать, принимает во внимание данный бабувизм, оптимизируя бюджеты.
+                                            </strong>
+                                        </div>
+
+                                        <div class="news-item-slider__text">
+                                            <i>
+                                                Апостериори, предмет деятельности переворачивает экспериментальный онтологический статус искусства. Сомнение конструктивно. Природа эстетического, как принято считать, принимает во внимание данный бабувизм, оптимизируя бюджеты.
+                                            </i>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="news-item-section__navs">
+                            <button class="news__load-btn news__load-btn--inverse news-item-section__button news-item-section__button--prev">
+                                <span>Предыдущая новость</span>
+                                <span class="news__load-btn-icon">
+                                    <svg class="icon icon-news">
+                                        <use xlink:href="./images/sprite.svg#arrow-news"></use>
+                                    </svg>
+                                </span>
+                            </button>
+
+                            <button class="news__load-btn news-item-section__button news-item-section__button--next">
+                                <span>Следующая новость</span>
+                                <span class="news__load-btn-icon">
+                                    <svg class="icon icon-news">
+                                        <use xlink:href="./images/sprite.svg#arrow-news"></use>
+                                    </svg>
+                                </span>
+                            </button>
+                        </div>
+
+                        <div class="news-item-section__bottom-slider news-bottom-slider swiper js-news-bottom-slider">
+                            <ul class="news-bottom-slider__list-wrapper swiper-wrapper">
+                                <li class="news-bottom-slider__slide swiper-slide">
+                                    <div class="news__list news__list--flex">
+                                        <a href="#" class="news__item">
+                                            <div class="news__image">
+                                                <div class="news__pic-wrapper">
+                                                    <img src="./images/news/image-2.jpg" alt="новости checking-carriers">
+                                                </div>
+                                            </div>
+
+                                            <div class="news__desc">
+                                                <span class="news__name">
+                                                    Название новости
+                                                </span>
+
+                                                <span class="news__text">
+                                                    Небольшое описание новости в несколько строк чтобы раскрыть заголовок
+                                                </span>
+
+                                                <span class="news__date">
+                                                    1 февраля 2023
+                                                </span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </li>
+                                <li class="news-bottom-slider__slide swiper-slide">
+                                    <div class="news__list news__list--flex">
+                                        <a href="#" class="news__item">
+                                            <div class="news__image">
+                                                <div class="news__pic-wrapper">
+                                                    <img src="./images/news/image-2.jpg" alt="новости checking-carriers">
+                                                </div>
+                                            </div>
+
+                                            <div class="news__desc">
+                                                <span class="news__name">
+                                                    Название новости
+                                                </span>
+
+                                                <span class="news__text">
+                                                    Небольшое описание новости в несколько строк чтобы раскрыть заголовок
+                                                </span>
+
+                                                <span class="news__date">
+                                                    1 февраля 2023
+                                                </span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </li>
+                                <li class="news-bottom-slider__slide swiper-slide">
+                                    <div class="news__list news__list--flex">
+                                        <a href="#" class="news__item">
+                                            <div class="news__image">
+                                                <div class="news__pic-wrapper">
+                                                    <img src="./images/news/image-2.jpg" alt="новости checking-carriers">
+                                                </div>
+                                            </div>
+
+                                            <div class="news__desc">
+                                                <span class="news__name">
+                                                    Название новости
+                                                </span>
+
+                                                <span class="news__text">
+                                                    Небольшое описание новости в несколько строк чтобы раскрыть заголовок
+                                                </span>
+
+                                                <span class="news__date">
+                                                    1 февраля 2023
+                                                </span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </li>
+                                <li class="news-bottom-slider__slide swiper-slide">
+                                    <div class="news__list news__list--flex">
+                                        <a href="#" class="news__item">
+                                            <div class="news__image">
+                                                <div class="news__pic-wrapper">
+                                                    <img src="./images/news/image-2.jpg" alt="новости checking-carriers">
+                                                </div>
+                                            </div>
+
+                                            <div class="news__desc">
+                                                <span class="news__name">
+                                                    Название новости
+                                                </span>
+
+                                                <span class="news__text">
+                                                    Небольшое описание новости в несколько строк чтобы раскрыть заголовок
+                                                </span>
+
+                                                <span class="news__date">
+                                                    1 февраля 2023
+                                                </span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </li>
+                                <li class="news-bottom-slider__slide swiper-slide">
+                                    <div class="news__list news__list--flex">
+                                        <a href="#" class="news__item">
+                                            <div class="news__image">
+                                                <div class="news__pic-wrapper">
+                                                    <img src="./images/news/image-2.jpg" alt="новости checking-carriers">
+                                                </div>
+                                            </div>
+
+                                            <div class="news__desc">
+                                                <span class="news__name">
+                                                    Название новости
+                                                </span>
+
+                                                <span class="news__text">
+                                                    Небольшое описание новости в несколько строк чтобы раскрыть заголовок
+                                                </span>
+
+                                                <span class="news__date">
+                                                    1 февраля 2023
+                                                </span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+		</main>
+
+		<footer class="footer">
+			<div class="footer__main">
+				<div class="footer__site-container">
+					<a href="/" class="footer__logo logo logo--big">
+						<svg class="icon">
+							<use xlink:href="./images/sprite.svg#logo"></use>
+						</svg>
+					</a>
+
+					<ul class="footer__menus">
+						<li class="footer__menu footer-menu">
+							<div class="h4 footer-menu__title">
+								Компания
+							</div>
+
+							<ul class="footer-menu__list">
+								<li class="footer-menu__item">
+									<a href="" class="footer-menu__link link">
+										<span>
+											О сервисе
+										</span>
+										<i>
+											<svg class="icon">
+												<use xlink:href="./images/sprite.svg#loader-grey"></use>
+											</svg>
+										</i>
+									</a>
+								</li>
+								<li class="footer-menu__item">
+									<a href="" class="footer-menu__link link">
+										<span>
+											Пример отчета
+										</span>
+										<i>
+											<svg class="icon">
+												<use xlink:href="./images/sprite.svg#loader-grey"></use>
+											</svg>
+										</i>
+									</a>
+								</li>
+								<li class="footer-menu__item">
+									<a href="" class="footer-menu__link link">
+										<span>
+											Блог
+										</span>
+										<i>
+											<svg class="icon">
+												<use xlink:href="./images/sprite.svg#loader-grey"></use>
+											</svg>
+										</i>
+									</a>
+								</li>
+								<li class="footer-menu__item">
+									<a href="" class="footer-menu__link link">
+										<span>
+											Контакты
+										</span>
+										<i>
+											<svg class="icon">
+												<use xlink:href="./images/sprite.svg#loader-grey"></use>
+											</svg>
+										</i>
+									</a>
+								</li>
+								<li class="footer-menu__item">
+									<a href="" class="footer-menu__link link">
+										<span>
+											Тарифы и цены
+										</span>
+										<i>
+											<svg class="icon">
+												<use xlink:href="./images/sprite.svg#loader-grey"></use>
+											</svg>
+										</i>
+									</a>
+								</li>
+							</ul>
+						</li>
+
+						<li class="footer__menu footer-menu">
+							<div class="h4 footer-menu__title">
+								Что проверяем
+							</div>
+
+							<ul class="footer-menu__list">
+								<li class="footer-menu__item">
+									<a href="" class="footer-menu__link link">
+										<span>
+											Водитель
+										</span>
+										<i>
+											<svg class="icon">
+												<use xlink:href="./images/sprite.svg#loader-grey"></use>
+											</svg>
+										</i>
+									</a>
+								</li>
+								<li class="footer-menu__item">
+									<a href="" class="footer-menu__link link">
+										<span>
+											Автомобиль
+										</span>
+										<i>
+											<svg class="icon">
+												<use xlink:href="./images/sprite.svg#loader-grey"></use>
+											</svg>
+										</i>
+									</a>
+								</li>
+								<li class="footer-menu__item">
+									<a href="" class="footer-menu__link link">
+										<span>
+											Штрафы
+										</span>
+										<i>
+											<svg class="icon">
+												<use xlink:href="./images/sprite.svg#loader-grey"></use>
+											</svg>
+										</i>
+									</a>
+								</li>
+								<li class="footer-menu__item">
+									<a href="" class="footer-menu__link link">
+										<span>
+											Задолженность
+										</span>
+										<i>
+											<svg class="icon">
+												<use xlink:href="./images/sprite.svg#loader-grey"></use>
+											</svg>
+										</i>
+									</a>
+								</li>
+								<li class="footer-menu__item">
+									<a href="" class="footer-menu__link link">
+										<span>
+											Транспортная компания
+										</span>
+										<i>
+											<svg class="icon">
+												<use xlink:href="./images/sprite.svg#loader-grey"></use>
+											</svg>
+										</i>
+									</a>
+								</li>
+							</ul>
+						</li>
+
+						<li class="footer__menu footer-menu">
+							<div class="h4 footer-menu__title">
+								Как проверяем
+							</div>
+
+							<ul class="footer-menu__list">
+								<li class="footer-menu__item">
+									<a href="" class="footer-menu__link link">
+										<span>
+											По ИНН
+										</span>
+										<i>
+											<svg class="icon">
+												<use xlink:href="./images/sprite.svg#loader-grey"></use>
+											</svg>
+										</i>
+									</a>
+								</li>
+								<li class="footer-menu__item">
+									<a href="" class="footer-menu__link link">
+										<span>
+											По VIN
+										</span>
+										<i>
+											<svg class="icon">
+												<use xlink:href="./images/sprite.svg#loader-grey"></use>
+											</svg>
+										</i>
+									</a>
+								</li>
+								<li class="footer-menu__item">
+									<a href="" class="footer-menu__link link">
+										<span>
+											По СТС
+										</span>
+										<i>
+											<svg class="icon">
+												<use xlink:href="./images/sprite.svg#loader-grey"></use>
+											</svg>
+										</i>
+									</a>
+								</li>
+								<li class="footer-menu__item">
+									<a href="" class="footer-menu__link link">
+										<span>
+											По В/У
+										</span>
+										<i>
+											<svg class="icon">
+												<use xlink:href="./images/sprite.svg#loader-grey"></use>
+											</svg>
+										</i>
+									</a>
+								</li>
+								<li class="footer-menu__item">
+									<a href="" class="footer-menu__link link">
+										<span>
+											По гос. номеру
+										</span>
+										<i>
+											<svg class="icon">
+												<use xlink:href="./images/sprite.svg#loader-grey"></use>
+											</svg>
+										</i>
+									</a>
+								</li>
+								<li class="footer-menu__item">
+									<a href="" class="footer-menu__link link">
+										<span>
+											По паспорту РФ
+										</span>
+										<i>
+											<svg class="icon">
+												<use xlink:href="./images/sprite.svg#loader-grey"></use>
+											</svg>
+										</i>
+									</a>
+								</li>
+							</ul>
+						</li>
+
+						<li class="footer__menu footer-menu">
+							<div class="h4 footer-menu__title">
+								Для бизнеса
+							</div>
+
+							<ul class="footer-menu__list">
+								<li class="footer-menu__item">
+									<a href="" class="footer-menu__link link">
+										<span>
+											Готовые решения
+										</span>
+										<i>
+											<svg class="icon">
+												<use xlink:href="./images/sprite.svg#loader-grey"></use>
+											</svg>
+										</i>
+									</a>
+								</li>
+								<li class="footer-menu__item">
+									<a href="" class="footer-menu__link link">
+										<span>
+											Сотрудничество
+										</span>
+										<i>
+											<svg class="icon">
+												<use xlink:href="./images/sprite.svg#loader-grey"></use>
+											</svg>
+										</i>
+									</a>
+								</li>
+								<li class="footer-menu__item">
+									<a href="" class="footer-menu__link link">
+										<span>
+											Возможности
+										</span>
+										<i>
+											<svg class="icon">
+												<use xlink:href="./images/sprite.svg#loader-grey"></use>
+											</svg>
+										</i>
+									</a>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="footer__basement">
+				<div class="footer__site-container">
+					<div class="footer__info">
+						<div class="copyright link">
+							© 2022 Checking Carriers
+						</div>
+
+						<div class="owner link">
+							ИП Кетов Е. И.
+						</div>
+
+						<a href="/" class="privacy link">
+							Политика конфидециальности
+						</a>
+					</div>
+					<div class="footer__contacts">
+						<div class="contacts">
+							<div class="contacts">
+								<ul class="contacts__list">
+									<li class="contacts__item">
+										<a href="mailto: support@checking-carriers.ru" class="contacts__link contact">
+											<span class="contact__icon">
+												<svg class="icon">
+													<use xlink:href="./images/sprite.svg#envelop"></use>
+												</svg>
+											</span>
+											<span class="contact__text">support@checking-carriers.ru</span>
+										</a>
+									</li>
+									<li class="contacts__item">
+										<a href="tel:+7(953)-603-79-76" class="contacts__link contact">
+											<span class="contact__icon">
+												<svg class="icon">
+													<use xlink:href="./images/sprite.svg#phone"></use>
+												</svg>
+											</span>
+											<span class="contact__text">+7(953)-603-79-76</span>
+										</a>
+									</li>
+									<li class="contacts__item">
+										<a href="#" class="contacts__link contact">
+											<span class="contact__icon">
+												<svg class="icon">
+													<use xlink:href="./images/sprite.svg#telegram"></use>
+												</svg>
+											</span>
+											<span class="contact__text">checking-carriers</span>
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+
+	<dialog class="dialog">
+		<div class="dialog__body">
+			<div class="dialog__content">
+				<div class="dialog__row">
+					<div class="contacts">
+						<ul class="contacts__list contacts__list--wrap">
+							<li class="contacts__item">
+								<a href="mailto: support@checking-carriers.ru" class="contacts__link contact">
+									<span class="contact__icon">
+										<svg class="icon">
+											<use xlink:href="./images/sprite.svg#envelop"></use>
+										</svg>
+									</span>
+									<span class="contact__text">support@checking-carriers.ru</span>
+								</a>
+							</li>
+							<li class="contacts__item">
+								<a href="tel:+7(953)-603-79-76" class="contacts__link contact">
+									<span class="contact__icon">
+										<svg class="icon">
+											<use xlink:href="./images/sprite.svg#phone"></use>
+										</svg>
+									</span>
+									<span class="contact__text">+7(953)-603-79-76</span>
+								</a>
+							</li>
+							<li class="contacts__item">
+								<a href="#" class="contacts__link contact">
+									<span class="contact__icon">
+										<svg class="icon">
+											<use xlink:href="./images/sprite.svg#telegram"></use>
+										</svg>
+									</span>
+									<span class="contact__text">checking-carriers</span>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="dialog__row">
+					<nav class="menu">
+						<ul class="menu__list menu__list--wrap">
+							<li class="menu__item">
+								<a href="./about.html" class="menu__link link">
+									О сервисе
+								</a>
+							</li>
+							<li class="menu__item">
+								<a href="./report-example.html" class="menu__link link">
+									Пример отчета
+								</a>
+							</li>
+							<li class="menu__item">
+								<a href="./blog.ru" class="menu__link link">
+									Блог
+								</a>
+							</li>
+							<li class="menu__item">
+								<a href="./contacts.html" class="menu__link link">
+									Контакты
+								</a>
+							</li>
+						</ul>
+					</nav>
+				</div>
+
+				<div class="dialog__row dialog__search">
+					<form class="search">
+						<span class="search__icon">
+							<svg class="icon">
+								<use xlink:href="./images/sprite.svg#search"></use>
+							</svg>
+						</span>
+						<input type="text" class="search__input input" placeholder="Поиск по сайту" required>
+						<button type="reset" class="search__clear">
+							<svg class="icon">
+								<use xlink:href="./images/sprite.svg#input-close"></use>
+							</svg>
+						</button>
+					</form>
+				</div>
+			</div>
+		</div>
+	</dialog>
+
+	<div class="popup js-open">
+		<div class="popup__content">
+			<button class="popup__close-btn">
+				<svg class="icon">
+					<use xlink:href="./images/sprite.svg#popup-close"></use>
+				</svg>
+			</button>
+
+			<h3 class="h3 popup__title">
+				Поделиться в социальных сетях<br> и мессенджерах
+			</h3>
+
+			<ul class="popup__list">
+				<li class="popup__item">
+					<a href="#" class="popup__link check-link">
+						<div class="check-link__icon-wrapper">
+							<span class="check-link__icon">
+								<svg class="icon">
+									<use xlink:href="./images/sprite.svg#share-tel"></use>
+								</svg>
+							</span>
+						</div>
+						<span class="check-link__text">
+							Telegram
+						</span>
+					</a>
+				</li>
+				<li class="popup__item">
+					<a href="#" class="popup__link check-link">
+						<div class="check-link__icon-wrapper">
+							<span class="check-link__icon">
+								<svg class="icon">
+									<use xlink:href="./images/sprite.svg#share-what"></use>
+								</svg>
+							</span>
+						</div>
+						<span class="check-link__text">
+							WhatsApp
+						</span>
+					</a>
+				</li>
+				<li class="popup__item">
+					<a href="#" class="popup__link check-link">
+						<div class="check-link__icon-wrapper">
+							<span class="check-link__icon">
+								<svg class="icon">
+									<use xlink:href="./images/sprite.svg#share-vib"></use>
+								</svg>
+							</span>
+						</div>
+						<span class="check-link__text">
+							Viber
+						</span>
+					</a>
+				</li>
+				<li class="popup__item">
+					<a href="#" class="popup__link check-link">
+						<div class="check-link__icon-wrapper">
+							<span class="check-link__icon">
+								<svg class="icon">
+									<use xlink:href="./images/sprite.svg#share-od"></use>
+								</svg>
+							</span>
+						</div>
+						<span class="check-link__text">
+							OK
+						</span>
+					</a>
+				</li>
+				<li class="popup__item">
+					<a href="#" class="popup__link check-link">
+						<div class="check-link__icon-wrapper">
+							<span class="check-link__icon">
+								<svg class="icon">
+									<use xlink:href="./images/sprite.svg#share-vk"></use>
+								</svg>
+							</span>
+						</div>
+						<span class="check-link__text">
+							VK
+						</span>
+					</a>
+				</li>
+			</ul>
+
+			<button class="popup__copy-btn">
+				<span class="popup__copy-btn-icon">
+					<svg class="icon">
+						<use xlink:href="./images/sprite.svg#share-copy"></use>
+					</svg>
+				</span>
+				<span class="popup__copy-btn-text">
+					Скопировать ссылку
+				</span>
+			</button>
+		</div>
+	</div>
+</body>
+</html>

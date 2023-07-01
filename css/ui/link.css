@@ -1,0 +1,45 @@
+.link {
+    position: relative;
+    display: block;
+    padding: 0.25rem 0;
+    font: var(--font-btn-s);
+}
+
+.link i {
+    position: absolute;
+    top: 50%;
+    right: calc(100% + 1rem);
+    z-index: 1;
+    display: none;
+    min-width: 2.4rem;
+    height: 100%;
+    transform: translateY(-50%);
+}
+
+.link._loader{
+    pointer-events: none;
+}
+
+.link._loader i {
+    display: block;
+}
+
+.link:active {
+    color: var(--color-black-100);
+}
+
+.link:disabled,
+.link.disabled {
+    pointer-events: none;
+    color: var(--color-black-20);
+}
+
+@media (any-hover: hover) {
+    .link:hover {
+        color: var(--color-black-80);
+    }
+
+    .link:active:hover {
+        color: var(--color-black-100);
+    }
+}
